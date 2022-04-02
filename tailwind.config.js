@@ -44,6 +44,14 @@ module.exports = {
         100: '#EFEFEE',
         50: '#FFFFFF',
       }
+    },
+    screens: {
+      sm: '600px',
+      md: '960px',
+      lg: '1367px'
+    },
+    spacing: {
+
     }
   }
 };
