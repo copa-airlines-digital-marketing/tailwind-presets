@@ -3,6 +3,6 @@
 </script>
 
 <main>
-	<h1 class="text-primary-ultralight">Hello {name}!</h1>
+	<h1 class="text-primary-ultralight sm:text-secondary md:text-pardo lg:text-bg-light-blue">Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
