@@ -1,4 +1,5 @@
 const production = !process.env.ROLLUP_WATCH;
+
 const fade = {
   100: 'ff',
   99: 'fc',
@@ -103,6 +104,10 @@ const fade = {
   0: '00'
 }
 
+const baseFontSize = 16
+
+const remValue = (size) => `${size/baseFontSize}rem`
+
 module.exports = {
   future: {
     purgeLayersByDefault: true,
@@ -115,18 +120,18 @@ module.exports = {
       addComponents({
         '.container': {
           maxWidth: '100%',
-          width: 'calc(100% - 2rem)',
+          width: `calc(100% - ${remValue(32)})`,
           '@screen sm': {
             maxWidth: '100%',
-            width: '35rem'
+            width: remValue(560)
           },
           '@screen md': {
             maxWidth: '100%',
-            width: 'calc(100% - 9rem)'
+            width: `calc(100% - ${remValue(144)})`
           },
           '@screen lg': {
             maxWidth: '100%',
-            width: '76.5rem'
+            width: remValue(1208)
           }
         }
       })
@@ -180,11 +185,78 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: '1rem',
-        sm: '1.5rem',
-        md: '2rem',
-        lg: '2.5rem'
+        DEFAULT: remValue(16),
+        sm: remValue(24),
+        md: remValue(28),
+        lg: remValue(40)
       }
+    },
+    fontFamily: {
+      heading: ['Gilroy', 'Helvetica', 'Arial', 'sans-serif'],
+      boddy: ['Suisse\\ Int\'l', 'Helvetica', 'Arial', 'sans-serif']
+    },
+    fontSize: {
+      '76-80': [remValue(76), {
+        lineHeight: remValue(80)
+      }],
+      '66-72': [remValue(66), {
+        lineHeight: remValue(72)
+      }],
+
+      '60-64': [remValue(60), {
+        lineHeight: remValue(64)
+      }],
+      '56-64': [remValue(56), {
+        lineHeight: remValue(64)
+      }],
+      '52-56': [remValue(52), {
+        lineHeight: remValue(56)
+      }],
+      '48-64': [remValue(48), {
+        lineHeight: remValue(64)
+      }],
+      '44-48': [remValue(44), {
+        lineHeight: remValue(48)
+      }],
+      '40-48': [remValue(40), {
+        lineHeight: remValue(48)
+      }],
+      '36-40': [remValue(36), {
+        lineHeight: remValue(40)
+      }],
+      '32-40': [remValue(32), {
+        lineHeight: remValue(40)
+      }],
+      '30-40': [remValue(30), {
+        lineHeight: remValue(40)
+      }],
+      '30-32': [remValue(28), {
+        lineHeight: remValue(28)
+      }],
+      '28-32': [remValue(28), {
+        lineHeight: remValue(28)
+      }],
+      '24-32': [remValue(24), {
+        lineHeight: remValue(28)
+      }],
+      '20-32': [remValue(20), {
+        lineHeight: remValue(28)
+      }],
+      '20-24': [remValue(20), {
+        lineHeight: remValue(24)
+      }],
+      '18-24': [remValue(18), {
+        lineHeight: remValue(24)
+      }],
+      '16-24': [remValue(16), {
+        lineHeight: remValue(24)
+      }],
+      '14-20': [remValue(14), {
+        lineHeight: remValue(20)
+      }],
+      '12-16': [remValue(12), {
+        lineHeight: remValue(16)
+      }]
     },
     screens: {
       sm: '600px',
@@ -192,21 +264,21 @@ module.exports = {
       lg: '1367px'
     },
     spacing: {
-      1: '.5rem',
-      2: '1rem',
-      3: '1.5rem',
-      4: '2rem',
-      5: '2.5rem',
-      6: '3rem',
-      7: '3.5rem',
-      8: '4rem',
-      9: '4.5rem',
-      10: '5rem',
-      11: '5.5rem',
-      12: '6rem',
-      13: '7rem',
-      14: '8.5rem',
-      15: '9.5rem'
+      8: remValue(8),
+      16: remValue(16),
+      24: remValue(24),
+      32: remValue(28),
+      40: remValue(40),
+      48: remValue(48),
+      56: remValue(56),
+      64: remValue(64),
+      72: remValue(72),
+      80: remValue(80),
+      88: remValue(88),
+      96: remValue(96),
+      112: remValue(112),
+      136: remValue(136),
+      152: remValue(152)
     }
   }
 };
