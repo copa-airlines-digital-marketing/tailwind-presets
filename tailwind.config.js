@@ -108,7 +108,30 @@ module.exports = {
     purgeLayersByDefault: true,
     removeDeprecatedGapUtilities: true,
   },
-  plugins: [],
+  plugins: [
+    function ({
+      addComponents
+    }) {
+      addComponents({
+        '.container': {
+          maxWidth: '100%',
+          width: 'calc(100% - 2rem)',
+          '@screen sm': {
+            maxWidth: '100%',
+            width: '35rem'
+          },
+          '@screen md': {
+            maxWidth: '100%',
+            width: 'calc(100% - 9rem)'
+          },
+          '@screen lg': {
+            maxWidth: '100%',
+            width: '76.5rem'
+          }
+        }
+      })
+    }
+  ],
   purge: {
     content: [
       "./src/App.svelte",
@@ -152,6 +175,15 @@ module.exports = {
         200: '#DBDAD8',
         100: '#EFEFEE',
         50: '#FFFFFF',
+      }
+    },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '1.5rem',
+        md: '2rem',
+        lg: '2.5rem'
       }
     },
     screens: {
