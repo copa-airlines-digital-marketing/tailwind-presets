@@ -193,7 +193,7 @@ module.exports = {
     },
     fontFamily: {
       heading: ['Gilroy', 'Helvetica', 'Arial', 'sans-serif'],
-      boddy: ['Suisse\\ Int\'l', 'Helvetica', 'Arial', 'sans-serif']
+      body: ['"Suisse\ Intl"', 'Helvetica', 'Arial', 'sans-serif']
     },
     fontSize: {
       '76-80': [remValue(76), {
@@ -257,6 +257,24 @@ module.exports = {
       '12-16': [remValue(12), {
         lineHeight: remValue(16)
       }]
+    },
+    letterSpacing: {
+      1: remValue(1),
+      n063: '-0.63px',
+      n075: '-0.75px',
+      n088: '-0.88px',
+      n094: '-0.94px',
+      n1: '-1px',
+      n1025: '-1.25px',
+      n1033: '-1.33px',
+      n1042: '-1.42px',
+      n105: '-1.5px',
+      n1083: '-1.83px',
+      n2017: '-2.17px',
+      n2021: '-2.21px',
+      n205: '-2.5px',
+      n2061: '-2.61px',
+      n3: '-3px'
     },
     screens: {
       sm: '600px',

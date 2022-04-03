@@ -1,4 +1,11 @@
 @tailwind base;
+
+@layer base {
+  :root {
+    @apply font-body text-16-24 text-grey-600;
+  }
+}
+
 @tailwind components;
 
 @font-face {
@@ -15,33 +22,140 @@
 
 @font-face {
   font-family: 'Gilroy';
-  font-weight: 600;
+  font-weight: 700;
   src: local('Gilroy'), url(https://www.copaair.com/copalove/fonts/Radomir+Tinkov+-+Gilroy-Bold.otf) format('otf');
 }
 
 @font-face {
-  font-family: "Suisse Int'l";
-  src: local("Suisse In'tl"), url(/documents/20182/2902277/SuisseIntl-Light-WebXL.woff/9ef26fbd-12df-e34f-36b8-520e2096dc01) format("woff"), url(/documents/20182/2902277/SuisseIntl-Light-WebXL.woff2/8cbfcdda-dda9-b63f-e550-366477ff767c) format("woff2"), url(/documents/20182/2902277/SuisseIntl-Light-WebXL.ttf/e5b38f18-308d-342a-9666-12fb483520dd) format("truetype"), url(/documents/20182/2902277/SuisseIntl-Light-WebXL.svg/a59e4e03-fb0d-7eb2-0171-572c78e805a4) format("svg")
+  font-family: "Suisse Intl";
+  src: local("Suisse In'tl")
 }
 
 @font-face {
-  font-family: "Suisse Int'l";
+  font-family: "Suisse Intl";
   font-weight: 400;
-  src: local("Suisse In'tl"), url(/documents/20182/2902277/SuisseIntl-Regular-WebXL.woff2/8f3c6387-6ac7-6cca-7bd4-bc2794e9ee9b) format("woff2"), url(/documents/20182/2902277/SuisseIntl-Regular-WebXL.woff/763839e1-b0ac-b004-2294-90355feb3f7d) format("woff"), url(/documents/20182/2902277/SuisseIntl-Regular-WebXL.ttf/fac21be9-8d0a-bab3-fad2-a85d5102d340) format("truetype"), url(/documents/20182/2902277/SuisseIntl-Regular-WebXL.svg/bf0e7027-de24-0030-a0a4-18483f90efa9) format("svg")
+  src: local("Suisse In'tl")
 }
 
 @font-face {
-  font-family: "Suisse Int'l";
+  font-family: "Suisse Intl";
   font-weight: 500;
-  src: local("Suisse In'tl"), url(/documents/20182/2902277/SuisseIntl-Medium-WebXL.woff/c60ffdd4-276f-50a9-b3c2-85b7d850f603) format("woff"), url(/documents/20182/2902277/SuisseIntl-Medium-WebXL.woff2/fcb7338e-60fd-2466-5299-72fd9abe3977) format("woff2"), url(/documents/20182/2902277/SuisseIntl-Medium-WebXL.ttf/20322ca7-2e40-082f-261b-cd7d8f5048a9) format("truetype"), url(/documents/20182/2902277/SuisseIntl-Medium-WebXL.svg/5339d44f-0c4f-f607-eb7a-4fec91afb39f) format("svg")
+  src: local("Suisse In'tl")
 }
 
 @font-face {
-  font-family: "Suisse Int'l";
+  font-family: "Suisse Intl";
   font-style: normal;
   font-weight: 600;
-  src: local("Suisse In'tl"), url(/documents/20182/2902277/SuisseIntl-SemiBold-WebXL.woff/df56d709-4ddf-889b-62fa-7681eff5ec7e) format("woff"), url(/documents/20182/2902277/SuisseIntl-SemiBold-WebXL.woff2/8d3c7b52-198c-995a-9360-88435266fa41) format("woff2"), url(/documents/20182/2902277/SuisseIntl-SemiBold-WebXL.ttf/a3e1cb98-ce12-6e5f-1c3f-1e4e6f72c66a) format("truetype"), url(/documents/20182/2902277/SuisseIntl-SemiBold-WebXL.svg/e8a3279e-91e0-ae59-aeea-0e87353f20ca) format("svg")
+  src: local("Suisse In'tl")
 }
 
 
 @tailwind utilities;
+
+@layer utilities {
+
+  .cm {
+    &-text-d3 {}
+
+    &-text-d2 {
+      @apply font-semibold text-12-16 tracking-1;
+    }
+
+    &-text-d1 {
+      @apply text-14-20;
+    }
+
+    &-text-base {
+      @apply text-16-24;
+    }
+
+    &-text-up1 {
+      @apply text-18-24;
+
+      @screen lg {
+        @apply text-20-32;
+      }
+    }
+
+    &-text-up2 {
+      @apply font-bold text-20-24 tracking-n063;
+
+      @screen sm {
+        @apply text-24-32 tracking-n075;
+      }
+
+      @screen md {
+        @apply text-28-32 tracking-n088;
+      }
+
+      @screen lg {
+        @apply text-32-40 tracking-n1;
+      }
+    }
+
+    &-text-up3 {
+      @apply font-bold text-24-32 tracking-n075;
+
+      @screen sm {
+        @apply text-30-40 tracking-n094;
+      }
+
+      @screen md {
+        @apply text-36-40 tracking-n105;
+      }
+
+      @screen lg {
+        @apply text-40-48 tracking-n1025;
+      }
+    }
+
+    &-text-up4 {
+      @apply font-bold text-30-32 tracking-n1025;
+
+      @screen sm {
+        @apply text-36-40 tracking-n105;
+      }
+
+      @screen md {
+        @apply text-40-48 tracking-n1025;
+      }
+
+      @screen lg {
+        @apply text-48-64 tracking-n105;
+      }
+    }
+
+    &-text-up5 {
+      @apply font-bold text-32-40 tracking-n1033;
+
+      @screen sm {
+        @apply text-44-48 tracking-n1083;
+      }
+
+      @screen md {
+        @apply text-52-56 tracking-n2017;
+      }
+
+      @screen lg {
+        @apply text-60-64 tracking-n205;
+      }
+    }
+
+    &-text-up6 {
+      @apply font-bold text-36-40 tracking-n1042;
+
+      @screen sm {
+        @apply text-56-64 tracking-n2021;
+      }
+
+      @screen md {
+        @apply text-66-72 tracking-n2061;
+      }
+
+      @screen lg {
+        @apply text-76-80 tracking-n3;
+      }
+    }
+  }
+}
