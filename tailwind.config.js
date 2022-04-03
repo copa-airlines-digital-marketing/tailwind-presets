@@ -260,6 +260,7 @@ module.exports = {
     },
     letterSpacing: {
       1: remValue(1),
+      n053: '-0.53px',
       n063: '-0.63px',
       n075: '-0.75px',
       n088: '-0.88px',
@@ -274,7 +275,14 @@ module.exports = {
       n2021: '-2.21px',
       n205: '-2.5px',
       n2061: '-2.61px',
-      n3: '-3px'
+      n3: '-3px',
+      rn001: '-0.01rem',
+      rn0018: '-0.018rem',
+      rn0025: '-0.025rem',
+      rn003: '-0.03rem',
+      rn004: '-0.04rem',
+      rn005: '-0.05rem',
+      rn006: '-0.06rem',
     },
     screens: {
       sm: '600px',
