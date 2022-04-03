@@ -8,6 +8,10 @@
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
     <h4>Heading 4</h4>
+    <div class="cm-display--big">Display Big</div>
+    <div class="cm-display--normal">Display Normal</div>
+    <div class="cm-display--small">Display Small</div>
+    <div class="cm-display--tiny">Display Tiny</div>
     <p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
   </div>
 </main>

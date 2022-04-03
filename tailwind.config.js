@@ -280,8 +280,11 @@ module.exports = {
       rn0018: '-0.018rem',
       rn0025: '-0.025rem',
       rn003: '-0.03rem',
+      rn0033: '-0.033rem',
       rn004: '-0.04rem',
+      rn0045: '-0.045rem',
       rn005: '-0.05rem',
+      rn0054: '-0.054rem',
       rn006: '-0.06rem',
     },
     screens: {
