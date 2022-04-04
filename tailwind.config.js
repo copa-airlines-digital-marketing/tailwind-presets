@@ -145,6 +145,8 @@ module.exports = {
   },
   theme: {
     colors: {
+      inherit: 'inherit',
+      transparent: 'transparent',
       primary: {
         ultradark: '#001A66',
         dark: '#002880',
@@ -180,6 +182,8 @@ module.exports = {
         200: '#DBDAD8',
         100: '#EFEFEE',
         50: '#FFFFFF',
+        '50-20': `#FFFFFF${fade[20]}`,
+        '50-10': `#FFFFFF${fade[10]}`
       }
     },
     container: {
@@ -293,7 +297,10 @@ module.exports = {
       lg: '1367px'
     },
     spacing: {
+      0: 0,
+      4: remValue(4),
       8: remValue(8),
+      12: remValue(12),
       16: remValue(16),
       24: remValue(24),
       32: remValue(28),
