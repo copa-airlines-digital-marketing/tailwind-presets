@@ -1,0 +1,47 @@
+@layer base {
+  p {
+    @apply text-14-20 text-grey-600;
+  }
+}
+
+@layer utilities {
+  .body {
+    @apply text-14-20 text-grey-600;
+
+    &-caption {
+      @apply text-12-16;
+
+      &-lg {
+        @apply text-20-32;
+      }
+    }
+
+    &-body {
+
+      &-1 {
+        @apply text-16-24;
+      }
+
+      &-2 {
+        @apply text-14-20;
+      }
+    }
+
+    &-overline {
+      @apply font-semibold text-12-16 tracking-1 uppercase;
+    }
+
+    &-lg {
+      @apply text-16-24;
+    }
+
+    &-sm {
+      @apply text-12-16;
+    }
+
+    &-invert {
+      @apply text-200;
+    }
+
+  }
+}

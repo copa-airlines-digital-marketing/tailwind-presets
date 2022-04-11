@@ -1,4 +1,5 @@
 <script lang="ts">
+
 </script>
 
 <main>
@@ -44,14 +45,14 @@
         <em class="text-12-16">Body small / Emphasis</em>
       </div>
       <div class="flex justify-between items-baseline p-8">
-        <a href="#">Body Large / Link</a>
-        <a href="#" class="text-14-20">Body Normal / Link</a>
-        <a href="#" class="text-12-16">Body small / Link</a>
+        <a href="#text-override">Body Large / Link</a>
+        <a href="#text-override" class="text-14-20">Body Normal / Link</a>
+        <a href="#text-override" class="text-12-16">Body small / Link</a>
       </div>
       <div class="flex justify-between items-baseline p-8">
-        <a href="#" class="text-grey-600 underline">Body Large / Link Secondary</a>
-        <a href="#" class="text-14-20 text-grey-600 underline">Body Normal / Link Secondary</a>
-        <a href="#" class="text-12-16 text-grey-600 underline">Body small / Link Secondary</a>
+        <a href="#text-override" class="text-grey-600 underline">Body Large / Link Secondary</a>
+        <a href="#text-override" class="text-14-20 text-grey-600 underline">Body Normal / Link Secondary</a>
+        <a href="#text-override" class="text-12-16 text-grey-600 underline">Body small / Link Secondary</a>
       </div>
       <div class="flex justify-between items-baseline bg-primary-main p-8 rounded-t-lg">
         <p class="text-grey-200">Body Large / Primary Invert</p>
@@ -64,14 +65,14 @@
         <em class="text-12-16 text-grey-50">Body small / Emphasis Invert</em>
       </div>
       <div class="flex justify-between items-baseline bg-primary-main p-8">
-        <a href="#" class="text-grey-200 underline">Body Large / Link Invert</a>
-        <a href="#" class="text-14-20 text-grey-200 underline">Body Normal / Link Invert</a>
-        <a href="#" class="text-12-16 text-grey-200 underline">Body small / Link Invert</a>
+        <a href="#text-override" class="text-grey-200 underline">Body Large / Link Invert</a>
+        <a href="#text-override" class="text-14-20 text-grey-200 underline">Body Normal / Link Invert</a>
+        <a href="#text-override" class="text-12-16 text-grey-200 underline">Body small / Link Invert</a>
       </div>
       <div class="flex justify-between items-baseline bg-primary-main p-8 rounded-b-lg">
-        <a href="#" class="text-grey-200 underline">Body Large / Link Secondary Invert</a>
-        <a href="#" class="text-14-20 text-grey-200 underline">Body Normal / Link Secondary Invert</a>
-        <a href="#" class="text-12-16 text-grey-200 underline">Body small / Link Secondary Invert</a>
+        <a href="#text-override" class="text-grey-200 underline">Body Large / Link Secondary Invert</a>
+        <a href="#text-override" class="text-14-20 text-grey-200 underline">Body Normal / Link Secondary Invert</a>
+        <a href="#text-override" class="text-12-16 text-grey-200 underline">Body small / Link Secondary Invert</a>
       </div>
       <div class="flex justify-between items-baseline mt-24 p-8">
         <p class="text-20-32 text-grey-700">Caption Large / Primary</p>
@@ -177,6 +178,76 @@
         <button class="py-12 cm-button--rounded" type="button">Large</button>
         <button class="cm-button--rounded" type="button">default</button>
         <button class="cm-button--slim cm-button--rounded" type="button">Slim</button>
+      </div>
+    </section>
+    <section id="inputs">
+      <h3 class="text-primary-main mt-64 mb-24 ">Input Fields</h3>
+      <div class="flex flex-wrap gap-24">
+        <form action="#text-override">
+          <label for="" required>Label</label>
+          <input type="text" placeholder="Baisc Input" required>
+          <div class="cm-helper">
+            hello world
+          </div>
+          <input type="submit" value="Submit">
+        </form>
+        <div>
+          <label for="" required>Label</label>
+          <input class="px-48" type="text" placeholder="Input with icons" required>
+        </div>
+        <div>
+          <label for="">Label</label>
+          <input class="pl-48" type="text" placeholder="Input with icon on the left" disabled>
+        </div>
+        <div>
+          <label for="">Label</label>
+          <input class="pr-48" type="text" placeholder="Input with icon on the right" required>
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-24">
+        <div>
+          <label for="" required>Label</label>
+          <select name="" id="">
+            <option value="1">Select an option</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+          </select>
+        </div>
+        <div class="p-24">
+          <label class="text-12-16" for="" required>Label</label>
+          <select class="cm-input--big" name="" id="">
+            <option value="1">Select big</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+          </select>
+        </div>
+        <div class="bg-primary-ultradark p-24 rounded-xl">
+          <label class="text-12-16 text-grey-50" for="" required>Label</label>
+          <select class="cm-input--big cm-input--big--invert" name="" id="">
+            <option value="1">Select big</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+          </select>
+        </div>
+        <form action="#text-override" class="p-24">
+          <label class="text-12-16" for="" required>Label</label>
+          <input class="cm-input--big" type="text" placeholder="Input Big" required>
+          <div class="cm-helper text-12-16">
+            hello world
+          </div>
+          <input type="submit" value="Submit">
+        </form>
+        <form action="#text-override" class="bg-primary-ultradark p-24 rounded-xl">
+          <label class="text-12-16 text-grey-50" for="" required>Label</label>
+          <input class="cm-input--big cm-input--big--invert" type="text" placeholder="Input Big Inverted" required>
+          <div class="cm-helper text-12-16 text-grey-50">
+            hello world
+          </div>
+          <input type="submit" class="cm-button--outline--invert" value="Submit">
+        </form>
       </div>
     </section>
   </div>

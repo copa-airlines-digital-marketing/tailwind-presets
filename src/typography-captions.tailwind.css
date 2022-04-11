@@ -1,0 +1,29 @@
+@layer components {
+  .caption {
+    @apply font-medium text-16-24 text-grey-700;
+
+    &-tn {
+      @apply font-medium text-12-16 text-grey-700;
+    }
+
+    &-sm {
+      @apply font-medium text-14-20 text-grey-700;
+    }
+
+    &-lg {
+      @apply font-normal text-20-32 text-grey-700;
+    }
+
+    &-seconday {
+      @apply text-grey-600;
+
+      &-invert {
+        @apply text-grey-200;
+      }
+    }
+
+    &-invert {
+      @apply text-grey-50;
+    }
+  }
+}

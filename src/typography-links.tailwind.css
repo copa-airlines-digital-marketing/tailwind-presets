@@ -1,0 +1,33 @@
+@layer base {
+
+  a {
+    @apply text-primary-light;
+
+    &:hover {
+      @apply underline;
+    }
+  }
+
+}
+
+@layer utilities {
+  .link {
+    @apply text-primary-light;
+
+    &:hover {
+      @apply underline;
+    }
+
+    &-invert {
+      @apply text-grey-50 underline;
+    }
+
+    &-secondary {
+      @apply text-grey-600 underline;
+
+      &-invert {
+        @apply text-grey-300 underline;
+      }
+    }
+  }
+}

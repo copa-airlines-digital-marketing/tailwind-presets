@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  src: local('Gilroy'), url(https://www.copaair.com/copalove/fonts/Radomir+Tinkov+-+Gilroy-Regular.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 500;
+  src: local('Gilroy'), url(https://www.copaair.com/copalove/fonts/Radomir+Tinkov+-+Gilroy-Medium.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-weight: 700;
+  src: local('Gilroy'), url(https://www.copaair.com/copalove/fonts/Radomir+Tinkov+-+Gilroy-Bold.otf) format('otf');
+}
+
+@font-face {
+  font-family: "Suisse Intl";
+  src: local("Suisse In'tl")
+}
+
+@font-face {
+  font-family: "Suisse Intl";
+  font-weight: 400;
+  src: local("Suisse In'tl")
+}
+
+@font-face {
+  font-family: "Suisse Intl";
+  font-weight: 500;
+  src: local("Suisse In'tl")
+}
+
+@font-face {
+  font-family: "Suisse Intl";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Suisse In'tl")
+}

@@ -1,0 +1,58 @@
+@layer components {
+  .display {
+    @apply font-heading font-medium text-30-32 text-primary-main tracking-rn0033;
+
+    @screen sm {
+      @apply text-36-40 tracking-rn0045
+    }
+
+    @screen md {
+      @apply text-40-48 tracking-rn0054
+    }
+
+    @screen lg {
+      @apply text-48-64 tracking-rn006
+    }
+
+
+    &-bg {
+      @apply font-heading font-bold text-40-48 text-primary-main tracking-rn0033;
+
+      @screen sm {
+        @apply text-56-64 tracking-rn0045
+      }
+
+      @screen md {
+        @apply text-66-72 tracking-rn0054
+      }
+
+      @screen lg {
+        @apply text-76-80 tracking-rn006
+      }
+    }
+
+    &-sm {
+      @apply font-heading font-normal text-20-24 text-grey-700 tracking-rn0033;
+
+      @screen sm {
+        @apply text-24-32 tracking-rn0045
+      }
+
+      @screen md {
+        @apply text-28-32 tracking-rn0054
+      }
+
+      @screen lg {
+        @apply text-32-40 tracking-rn006
+      }
+    }
+
+    &-tn {
+      @apply font-heading font-normal text-18-24 text-grey-700;
+
+      @screen lg {
+        @apply text-20-32
+      }
+    }
+  }
+}

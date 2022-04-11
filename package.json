@@ -1,10 +1,28 @@
 {
-  "name": "svelte-app",
+  "name": "copa-airlines-tailwind-design-system",
+  "description": "A tailwind implementation of Copa Airlines",
   "version": "1.0.0",
-  "private": true,
+  "keywords": [
+    "Copa Airlines",
+    "Design System",
+    "Tailwind",
+    "CSS",
+    "CSS Framework"
+  ],
+  "main": "lib/cm-styles.js",
+  "module": "lib/cm-styles.esm.js",
+  "files": [
+    "lib",
+    "tailwind.config.js",
+    "src/tailwind.css",
+    "package.json"
+  ],
+  "author": "César Patiño <cpatino@copaair.com>",
+  "license": "ISC",
+  "private": false,
   "scripts": {
-    "watch:tailwind": "postcss public/tailwind.css -o public/build/index.css -w",
-    "build:tailwind": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/build/index.css",
+    "watch:tailwind": "postcss src/tailwind.css -o lib/cm-styles.css -w",
+    "build:tailwind": "cross-env NODE_ENV=production postcss src/tailwind.css -o lib/cm-styles.css",
     "build": "npm run build:tailwind && rollup -c",
     "start": "sirv public",
     "serve": "serve public -p 80",
@@ -35,6 +53,7 @@
   },
   "dependencies": {
     "postcss-nested": "^5.0.6",
+    "remixicon": "^2.5.0",
     "sirv-cli": "^2.0.0"
   }
 }

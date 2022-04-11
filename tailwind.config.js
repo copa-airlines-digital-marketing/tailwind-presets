@@ -144,6 +144,9 @@ module.exports = {
     enabled: production // disable purge in dev
   },
   theme: {
+    boxShadow: {
+      dropdown: '0px 4px 5px rgba(0, 0, 0, 0.07), 0px 3px 15px rgba(0, 0, 0, 0.08), 0px 2px 4px rgba(0, 0, 0, 0.12)',
+    },
     colors: {
       inherit: 'inherit',
       transparent: 'transparent',
@@ -298,6 +301,7 @@ module.exports = {
     },
     spacing: {
       0: 0,
+      1: remValue(1),
       4: remValue(4),
       8: remValue(8),
       12: remValue(12),
@@ -314,7 +318,8 @@ module.exports = {
       96: remValue(96),
       112: remValue(112),
       136: remValue(136),
-      152: remValue(152)
+      152: remValue(152),
+
     }
   }
 };
