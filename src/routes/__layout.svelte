@@ -22,6 +22,7 @@
       <h2>Global styles</h2>
       <a href="/colors">Colors</a>
       <a href="/spacing">Spacing</a>
+      <a href="/typography">Typography</a>
     </nav>
   {/if}
   <div class="flex-grow">
