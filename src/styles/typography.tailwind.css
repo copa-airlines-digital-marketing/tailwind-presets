@@ -1,12 +1,10 @@
 @import "./typography-fonts.tailwind.css";
 
-// Bases
 @import "./typography-headings.tailwind.css";
 @import "./typography-body.tailwind.css";
 @import "./typography-emphasis.tailwind.css";
 @import "./typography-links.tailwind.css";
 
-//Utilities driven
 @import "./typography-displays.tailwind.css";
 @import "./typography-captions.tailwind.css";
 @import "./typography-overline.tailwind.css";

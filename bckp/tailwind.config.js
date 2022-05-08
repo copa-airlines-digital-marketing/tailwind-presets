@@ -200,7 +200,7 @@ module.exports = {
     },
     fontFamily: {
       heading: ['Gilroy', 'Helvetica', 'Arial', 'sans-serif'],
-      body: ['"Suisse\ Intl"', 'Helvetica', 'Arial', 'sans-serif']
+      body: ['"Suisse Intl"', 'Helvetica', 'Arial', 'sans-serif']
     },
     fontSize: {
       '76-80': [remValue(76), {
