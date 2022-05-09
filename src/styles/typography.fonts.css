@@ -1,41 +1,42 @@
 @font-face {
   font-family: 'Gilroy';
   font-weight: 400;
-  src: local('Gilroy'), url(https://www.copaair.com/copalove/fonts/Radomir+Tinkov+-+Gilroy-Regular.otf) format('otf');
+  src: local('Gilroy'), url(/fonts/Radomir-Tinkov-Gilroy-Regular.otf) format('otf');
 }
 
 @font-face {
   font-family: 'Gilroy';
   font-weight: 500;
-  src: local('Gilroy'), url(https://www.copaair.com/copalove/fonts/Radomir+Tinkov+-+Gilroy-Medium.otf) format('otf');
+  src: local('Gilroy'), url(/fonts/Radomir-Tinkov-Gilroy-Medium.otf) format('otf');
 }
 
 @font-face {
   font-family: 'Gilroy';
   font-weight: 700;
-  src: local('Gilroy'), url(https://www.copaair.com/copalove/fonts/Radomir+Tinkov+-+Gilroy-Bold.otf) format('otf');
+  src: local('Gilroy'), url(/fonts/Radomir-Tinkov-Gilroy-Bold.otf) format('otf');
 }
 
 @font-face {
-  font-family: "Suisse Intl";
-  src: local("Suisse In'tl")
+  font-family: "SuisseIntl";
+  font-weight: 300;
+  src: local("Suisse Int'l"), url(/fonts/SuisseIntl-Light.ttf) format('ttf');
 }
 
 @font-face {
-  font-family: "Suisse Intl";
+  font-family: "SuisseIntl";
   font-weight: 400;
-  src: local("Suisse In'tl")
+  src: local("Suisse Int'l"), url(/fonts/SuisseIntl-Regular.ttf) format('ttf');
 }
 
 @font-face {
-  font-family: "Suisse Intl";
+  font-family: "SuisseIntl";
   font-weight: 500;
-  src: local("Suisse In'tl")
+  src: local("Suisse Int'l"), url(/fonts/SuisseIntl-Medium.ttf) format('ttf');
 }
 
 @font-face {
-  font-family: "Suisse Intl";
+  font-family: "SuisseIntl";
   font-style: normal;
   font-weight: 600;
-  src: local("Suisse In'tl")
+  src: local("Suisse Int'l"), url(/fonts/SuisseIntl-SemiBold.ttf) format('ttf');
 }

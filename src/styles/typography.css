@@ -1,11 +1,9 @@
-@import "./typography-fonts.tailwind.css";
-
-@import "./typography-headings.tailwind.css";
-@import "./typography-body.tailwind.css";
-@import "./typography-emphasis.tailwind.css";
-@import "./typography-links.tailwind.css";
-
-@import "./typography-displays.tailwind.css";
-@import "./typography-captions.tailwind.css";
-@import "./typography-overline.tailwind.css";
-@import "./typography-scale.tailwind.css";
+@import "./typography.fonts.css";
+@import "./typography.scale.css";
+@import "./typography.headings.css";
+@import "./typography.displays.css";
+@import "./typography.body.css";
+@import "./typography.captions.css";
+@import "./typography.overline.css";
+@import "./typography.emphasis.css";
+@import "./typography.links.css";

@@ -1,49 +1,49 @@
 @layer components {
   .display {
-    @apply font-heading font-medium text-30-32 text-primary-main tracking-rn0033;
+    @apply font-heading font-medium text-30-32 text-primary-main -tracking-r0033;
 
     @screen sm {
-      @apply text-36-40 tracking-rn0045
+      @apply text-36-40 -tracking-r0045
     }
 
     @screen md {
-      @apply text-40-48 tracking-rn0054
+      @apply text-40-48 -tracking-r0054
     }
 
     @screen lg {
-      @apply text-48-64 tracking-rn006
+      @apply text-48-64 -tracking-r006
     }
 
 
     &-bg {
-      @apply font-heading font-bold text-40-48 text-primary-main tracking-rn0033;
+      @apply font-heading font-bold text-40-48 text-primary-main -tracking-r0033;
 
       @screen sm {
-        @apply text-56-64 tracking-rn0045
+        @apply text-56-64 -tracking-r0045
       }
 
       @screen md {
-        @apply text-66-72 tracking-rn0054
+        @apply text-66-72 -tracking-r0054
       }
 
       @screen lg {
-        @apply text-76-80 tracking-rn006
+        @apply text-76-80 -tracking-r006
       }
     }
 
     &-sm {
-      @apply font-heading font-normal text-20-24 text-grey-700 tracking-rn0033;
+      @apply font-heading font-normal text-20-24 text-grey-700 -tracking-r0033;
 
       @screen sm {
-        @apply text-24-32 tracking-rn0045
+        @apply text-24-32 -tracking-r0045
       }
 
       @screen md {
-        @apply text-28-32 tracking-rn0054
+        @apply text-28-32 -tracking-r0054
       }
 
       @screen lg {
-        @apply text-32-40 tracking-rn006
+        @apply text-32-40 -tracking-r006
       }
     }
 

@@ -8,10 +8,12 @@
 </script>
 
 <Heading title="Spacing & Grid" subtitle="Foundations" bg="fares-economy-full"></Heading>
-<div class="container">
-  <div class="flex flex-wrap items-end justify-between">
+<section class="container">
+  <h2>Spacing System</h2>
+  <p>The class sufix is bellow the box</p>
+  <div class="flex flex-wrap items-end justify-between my-24 text-right">
     <div>
-      <h2 class="text-grey-800">LG</h2>
+      <h3>LG</h3>
       <div class="flex flex-col gap-16">
         <SpacingBox size="152">
           <div class="w-152 h-152 bg-grey-500"></div>
@@ -43,7 +45,7 @@
       </div>
     </div>
     <div>
-      <h2 class="text-grey-800">MD</h2>
+      <h3>MD</h3>
       <div class="flex flex-col gap-16">
         <SpacingBox size="136">
           <div class="w-136 h-136 bg-grey-500"></div>
@@ -75,7 +77,7 @@
       </div>
     </div>
     <div>
-      <h2 class="text-grey-800">SM</h2>
+      <h3>SM</h3>
       <div class="flex flex-col gap-16">
         <SpacingBox size="112">
           <div class="w-112 h-112 bg-grey-500"></div>
@@ -107,7 +109,7 @@
       </div>
     </div>
     <div>
-      <h2 class="text-grey-800">XS</h2>
+      <h3>XS</h3>
       <div class="flex flex-col gap-16">
         <SpacingBox size="96">
           <div class="w-96 h-96 bg-grey-500"></div>
@@ -139,8 +141,25 @@
       </div>
     </div>
   </div>
-</div>
-<div class="container mt-32 bg-bg-light-blue">
+  <h3>Additional Sufixes</h3>
+  <div class="flex flex-wrap gap-base">
+    <code>0</code>
+    <code>1</code>
+  </div>
+</section>
+<section class="container mt-32 py-24 bg-bg-light-blue">
   <h2>This is a container</h2>
-  <p>class is <code>container</code></p>
-</div>
+  <code>container</code>
+  <p>containers include vertical separation by default</p>
+  <h3 class="mt-24">Additional Clasess</h3>
+  <div class="flex flex-wrap gap-base">
+    <code>gap-base</code>
+    <code>my-base</code>
+    <code>mt-base</code>
+    <code>mb-base</code>
+    <code>mx-base</code>
+    <code>ml-base</code>
+    <code>mr-base</code>
+  </div>
+  <p>These classes handle the spacing between elements as the grid system idicates</p>
+</section>

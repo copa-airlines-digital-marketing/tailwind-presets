@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 const fade = {
   100: 'ff',
   99: 'fc',
@@ -116,21 +118,44 @@ module.exports = {
         '.container': {
           maxWidth: '100%',
           width: `calc(100% - ${remValue(32)})`,
+          marginTop: remValue(16),
+          marginBottom: remValue(16),
           '@screen sm': {
             maxWidth: '100%',
-            width: remValue(560)
+            width: remValue(560),
+            marginTop: remValue(24),
+            marginBottom: remValue(24)
           },
           '@screen md': {
             maxWidth: '100%',
-            width: `calc(100% - ${remValue(144)})`
+            width: `calc(100% - ${remValue(144)})`,
+            marginTop: remValue(32),
+            marginBottom: remValue(32)
           },
           '@screen lg': {
             maxWidth: '100%',
-            width: remValue(1208)
+            width: remValue(1208),
+            marginTop: remValue(40),
+            marginBottom: remValue(40)
           }
         }
       })
-    }
+    },
+    plugin(function ({
+      addBase,
+      theme
+    }) {
+      addBase({
+        'html': {
+          fontSize: theme('fontSize.16-24'),
+          color: theme('colors.grey.600')
+        },
+        'p': {
+          marginTop: theme('spacing.8')
+        },
+
+      })
+    })
   ],
   theme: {
     boxShadow: {
@@ -195,14 +220,13 @@ module.exports = {
       center: true,
       padding: {
         DEFAULT: remValue(16),
-        sm: remValue(24),
-        md: remValue(28),
-        lg: remValue(40)
+        md: remValue(24)
       }
     },
     fontFamily: {
+      sans: ['SuisseIntl', 'Helvetica', 'Arial', 'sans-serif'],
       heading: ['Gilroy', 'Helvetica', 'Arial', 'sans-serif'],
-      body: ['"Suisse\ Intl"', 'Helvetica', 'Arial', 'sans-serif']
+      body: ['SuisseIntl', 'Helvetica', 'Arial', 'sans-serif']
     },
     fontSize: {
       '76-80': [remValue(76), {
@@ -268,33 +292,33 @@ module.exports = {
       }]
     },
     letterSpacing: {
+      0: '0px',
+      '053': '0.53px',
+      '063': '0.63px',
+      '075': '0.75px',
+      '088': '0.88px',
+      '094': '0.94px',
       1: remValue(1),
-      n053: '-0.53px',
-      n063: '-0.63px',
-      n075: '-0.75px',
-      n088: '-0.88px',
-      n094: '-0.94px',
-      n1: '-1px',
-      n1025: '-1.25px',
-      n1033: '-1.33px',
-      n1042: '-1.42px',
-      n105: '-1.5px',
-      n1083: '-1.83px',
-      n2017: '-2.17px',
-      n2021: '-2.21px',
-      n205: '-2.5px',
-      n2061: '-2.61px',
-      n3: '-3px',
-      rn001: '-0.01rem',
-      rn0018: '-0.018rem',
-      rn0025: '-0.025rem',
-      rn003: '-0.03rem',
-      rn0033: '-0.033rem',
-      rn004: '-0.04rem',
-      rn0045: '-0.045rem',
-      rn005: '-0.05rem',
-      rn0054: '-0.054rem',
-      rn006: '-0.06rem',
+      1025: '1.25px',
+      1033: '1.33px',
+      1042: '1.42px',
+      105: '1.5px',
+      1083: '1.83px',
+      2017: '2.17px',
+      2021: '2.21px',
+      205: '2.5px',
+      2061: '2.61px',
+      3: '3px',
+      r001: '0.01rem',
+      r0018: '0.018rem',
+      r0025: '0.025rem',
+      r003: '0.03rem',
+      r0033: '0.033rem',
+      r004: '0.04rem',
+      r0045: '0.045rem',
+      r005: '0.05rem',
+      r0054: '0.054rem',
+      r006: '0.06rem',
     },
     screens: {
       sm: '600px',
@@ -309,7 +333,7 @@ module.exports = {
       12: remValue(12),
       16: remValue(16),
       24: remValue(24),
-      32: remValue(28),
+      32: remValue(32),
       40: remValue(40),
       48: remValue(48),
       56: remValue(56),

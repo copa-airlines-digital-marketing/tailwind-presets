@@ -12,7 +12,7 @@
 
 @layer utilities {
   .link {
-    @apply text-primary-light;
+    @apply text-primary-light cursor-pointer;
 
     &:hover {
       @apply underline;

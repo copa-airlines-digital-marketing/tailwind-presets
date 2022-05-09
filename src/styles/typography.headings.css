@@ -10,34 +10,34 @@
   }
 
   h1 {
-    @apply font-medium text-30-32 text-primary-main tracking-rn003;
+    @apply font-medium text-30-32 text-primary-main -tracking-r003;
 
     @screen sm {
-      @apply text-44-48 tracking-rn004;
+      @apply text-44-48 -tracking-r004;
     }
 
     @screen md {
-      @apply text-52-56 tracking-rn005;
+      @apply text-52-56 -tracking-r005;
     }
 
     @screen lg {
-      @apply text-60-64 tracking-rn006;
+      @apply text-60-64 -tracking-r006;
     }
   }
 
   h2 {
-    @apply font-bold text-20-24 text-primary-main tracking-rn001;
+    @apply font-bold text-20-24 text-primary-main -tracking-r001;
 
     @screen sm {
-      @apply text-24-32 tracking-rn0018;
+      @apply text-24-32 -tracking-r0018;
     }
 
     @screen md {
-      @apply text-28-32 tracking-rn0025;
+      @apply text-28-32 -tracking-r0025;
     }
 
     @screen lg {
-      @apply text-32-40 tracking-rn003;
+      @apply text-32-40 -tracking-r003;
     }
   }
 
@@ -59,34 +59,34 @@
 
   .heading {
     &-1 {
-      @apply font-heading font-medium text-30-32 text-primary-main tracking-rn003;
+      @apply font-heading font-medium text-30-32 text-primary-main tracking-r003;
 
       @screen sm {
-        @apply text-44-48 tracking-rn004;
+        @apply text-44-48 -tracking-r004;
       }
 
       @screen md {
-        @apply text-52-56 tracking-rn005;
+        @apply text-52-56 -tracking-r005;
       }
 
       @screen lg {
-        @apply text-60-64 tracking-rn006;
+        @apply text-60-64 -tracking-r006;
       }
     }
 
     &-2 {
-      @apply font-heading font-bold text-20-24 text-primary-main tracking-rn001;
+      @apply font-heading font-bold text-20-24 text-primary-main tracking-r001;
 
       @screen sm {
-        @apply text-24-32 tracking-rn0018;
+        @apply text-24-32 -tracking-r0018;
       }
 
       @screen md {
-        @apply text-28-32 tracking-rn0025;
+        @apply text-28-32 -tracking-r0025;
       }
 
       @screen lg {
-        @apply text-32-40 tracking-rn003;
+        @apply text-32-40 -tracking-r003;
       }
     }
 

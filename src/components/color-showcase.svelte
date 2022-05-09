@@ -3,8 +3,8 @@
   export let hex: string;
   export let prefix: string | undefined;
 </script>
-<div class="text-12-16 font-medium uppercase text-grey-800">
-  <p>{color} · {hex}</p>
-  <p>class sufix · <span class="normal-case">{#if prefix}-{prefix}{/if}-{color.replace(/\s/g,'-')}</span></p>
+<div>
+  <p class="text-d2 uppercase text-grey-800">{color} · {hex}</p>
   <slot></slot>
+  <code class="normal-case my-8">{#if prefix}-{prefix}{/if}-{color.replace(/\s/g,'-')}</code>
 </div>

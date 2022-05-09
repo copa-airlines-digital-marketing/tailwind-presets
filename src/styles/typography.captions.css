@@ -14,7 +14,7 @@
       @apply font-normal text-20-32 text-grey-700;
     }
 
-    &-seconday {
+    &-secondary {
       @apply text-grey-600;
 
       &-invert {
