@@ -23,6 +23,7 @@
       <a href="/colors">Colors</a>
       <a href="/spacing">Spacing</a>
       <a href="/typography">Typography</a>
+      <a href="/shadows">Shadows</a>
     </nav>
   {/if}
   <div class="flex-grow">

@@ -159,7 +159,10 @@ module.exports = {
   ],
   theme: {
     boxShadow: {
-      dropdown: '0px 4px 5px rgba(0, 0, 0, 0.07), 0px 3px 15px rgba(0, 0, 0, 0.08), 0px 2px 4px rgba(0, 0, 0, 0.12)',
+      tn: '0px 1px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.08)',
+      md: '0px 4px 5px rgba(0, 0, 0, 0.07), 0px 3px 15px rgba(0, 0, 0, 0.08), 0px 2px 4px rgba(0, 0, 0, 0.12)',
+      lg: '0px 12px 17px rgba(0, 0, 0, 0.06), 0px 5px 22px rgba(0, 0, 0, 0.06), 0px 7px 8px rgba(0, 0, 0, 0.1)',
+      modal: '0px 24px 24px 12px rgba(0, 0, 0, 0.0987885)'
     },
     colors: {
       inherit: 'inherit',
