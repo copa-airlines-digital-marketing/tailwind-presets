@@ -19,7 +19,7 @@
 
 </script>
 
-<div class="bg-{bg} text-grey-50 py-1 mb-base">
+<div class="{bg} text-grey-50 py-1 mb-base">
   <div class="container">
     <div class="flex items-center">
       <button class="w-48 h-48 p-12 bg-bg-light-blue rounded-full" on:click={toggleNav}>
