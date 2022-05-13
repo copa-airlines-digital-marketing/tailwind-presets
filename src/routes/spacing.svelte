@@ -4,7 +4,6 @@
 
 <script lang="ts">
   import Heading from '../components/heading.svelte';
-  import SpacingBox from '../components/spacing-box.svelte';
 
   type sizingCategory = {
     name: string
@@ -211,7 +210,6 @@
         </div>
       </div>
     {/each}
-
   </div>
   <h3>Additional Sufixes</h3>
   <div class="flex flex-wrap gap-base">

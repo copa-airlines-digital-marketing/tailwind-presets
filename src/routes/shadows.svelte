@@ -4,32 +4,20 @@
 
 <script lang="ts">
   import Heading from '../components/heading.svelte';
-  import SpacingBox from '../components/spacing-box.svelte';
+
+  const shadows: string[] = ['shadow-tn','shadow-md', 'shadow-lg', 'shadow-modal']
 </script>
 
-<Heading title="Shadows" subtitle="Foundations" bg="fares-economy-full"></Heading>
+<Heading title="Shadows" subtitle="Foundations" bg="bg-fares-economy-full"></Heading>
 <section class="container bg-bg-paper">
   <h2>Variants</h2>
   <div class="flex flex-wrap gap-base">
-    <div class="flex flex-col items-center">
-      <div class="shadow-tn w-152 h-112">
+    {#each shadows as shadow}
+      <div class="flex flex-col items-center">
+        <div class="{shadow} w-152 h-112">
+        </div>
+        <code>{shadow.replace('shadow-','')}</code>
       </div>
-      <code>tn</code>
-    </div>
-    <div class="flex flex-col items-center">
-      <div class="shadow-md w-152 h-112">
-      </div>
-      <code>md</code>
-    </div>
-    <div class="flex flex-col items-center">
-      <div class="shadow-lg w-152 h-112">
-      </div>
-      <code>lg</code>
-    </div>
-    <div class="flex flex-col items-center">
-      <div class="shadow-modal w-152 h-112">
-      </div>
-      <code>modal</code>
-    </div>
+    {/each}
   </div>
 </section>

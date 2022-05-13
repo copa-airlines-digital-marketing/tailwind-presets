@@ -4,9 +4,6 @@
 
 <script lang="ts">
   import Heading from '../components/heading.svelte';
-  import DsHeading from '../components/ds-heading.svelte';
-  import ColorShowcase from '../components/color-showcase.svelte';
-  import ColorsContainer from '../components/colors-container.svelte';
 
   type TColor = { 
     name: string,
@@ -202,12 +199,17 @@
 <Heading title="Colors" subtitle="Foundations" bg="bg-fares-economy-full"></Heading>
 <div class="container">
   {#each colorCategories as category}
-    <DsHeading>{getCategoryName(category)}</DsHeading>
+    <h2>{getCategoryName(category)}</h2>
     {@const colorsFromCategory = getCategoryColors(category)}
-    <ColorsContainer>
+    <div class="gap-16 grid grid-cols-2 auto-rows items-end mb-32 mt-16 md:grid-cols-3">
       {#each colorsFromCategory as colorObject}
-        <ColorShowcase color="{getcolorName(colorObject)}" hex="{getcolorHex(colorObject)}" bg="{getcolorClass(colorObject)}"></ColorShowcase>
+        <div>
+          <p class="text-d2 uppercase text-grey-800">{getcolorName(colorObject)} · {getcolorHex(colorObject)}</p>
+          <div class="h-72 w-136 rounded-lg mt-8 {getcolorClass(colorObject)}" >
+          </div>
+          <code class="normal-case my-8">{getcolorHex(colorObject).replace('bg-','')}</code>
+        </div>
       {/each}
-    </ColorsContainer>
+    </div>
   {/each}
 </div>

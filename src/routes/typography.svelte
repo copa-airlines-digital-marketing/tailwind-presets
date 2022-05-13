@@ -5,9 +5,107 @@
 <script lang="ts">
   import Heading from '../components/heading.svelte';
   import TextShowcase from '../components/text-showcase.svelte';
+
+  type classAndNames = {
+    className: string
+    name: string
+  }
+
+  const responsiveFontClasses: string[] = ['text-u6','text-u5','text-u4','text-u3','text-u2','text-u1','text-base','text-d1','text-d2','text-d3']
+
+  const fontSizeSufixes: string[] = [
+    'text-76-80',
+    'text-66-72',
+    'text-60-64',
+    'text-56-64',
+    'text-52-56',
+    'text-48-64',
+    'text-44-48',
+    'text-40-48',
+    'text-36-40',
+    'text-32-40',
+    'text-30-40',
+    'text-30-32',
+    'text-28-32',
+    'text-24-32',
+    'text-20-32',
+    'text-20-24',
+    'text-18-24',
+    'text-16-24',
+    'text-14-20',
+    'text-12-16'
+  ]
+
+  const letterSpacingSufixes: string[] = [
+    'tracking-0',
+    'tracking-053',
+    'tracking-063',
+    'tracking-075',
+    'tracking-088',
+    'tracking-094',
+    'tracking-1',
+    'tracking-1025',
+    'tracking-1033',
+    'tracking-1042',
+    'tracking-105',
+    'tracking-1083',
+    'tracking-2017',
+    'tracking-2021',
+    'tracking-205',
+    'tracking-2061',
+    'tracking-3',
+    'tracking-r001',
+    'tracking-r0018',
+    'tracking-r0025',
+    'tracking-r003',
+    'tracking-r0033',
+    'tracking-r004',
+    'tracking-r0045',
+    'tracking-r005',
+    'tracking-r0054',
+    'tracking-r006',
+  ]
+
+  const headingClasses: string[] = ['heading-1','heading-2','heading-3','heading-4']
+
+  const displayClasses: classAndNames[] = [
+    {
+      className: 'display-bg',
+      name: 'Display Big'
+    },
+    {
+      className: 'display',
+      name: 'Display Nomral'
+    },{
+      className: 'display-sm',
+      name: 'Display Small'
+    },{
+      className: 'display-tn',
+      name: 'Display Tiny'
+    },
+  ]
+
+  const textVariantsClasses: classAndNames[] = [
+    {
+      className: 'body-caption-lg',
+      name: 'Caption large'
+    }, {
+      className: 'body-body-1',
+      name: 'Body 1'
+    }, {
+      className: 'body-body-2',
+      name: 'Body 2'
+    }, {
+      className: 'body-caption',
+      name: 'Caption'
+    }, {
+      className: 'body-overline',
+      name: 'OVERLINE'
+    }
+  ]
 </script>
 
-<Heading title="Typography" subtitle="Foundations" bg="fares-economy-full"></Heading>
+<Heading title="Typography" subtitle="Foundations" bg="bg-fares-economy-full"></Heading>
 <section class="container">
   <h2>Type Families</h2>
   <p>
@@ -34,90 +132,31 @@
   <p>To check sizes switch to mobile views</p>
   <h3 class="mt-24">Classes</h3>
   <div class="flex flex-wrap items-end gap-base">
-    <TextShowcase prefix="text" size="u6">
-      <p class="text-u6 uppercase">U6</p>
-    </TextShowcase>
-    <TextShowcase prefix="text" size="u5">
-      <p class="text-u5 uppercase">u5</p>
-    </TextShowcase>
-    <TextShowcase prefix="text" size="u4">
-      <p class="text-u4 uppercase">u4</p>
-    </TextShowcase>
-    <TextShowcase prefix="text" size="u3">
-      <p class="text-u3 uppercase">u3</p>
-    </TextShowcase>
-    <TextShowcase prefix="text" size="u2">
-      <p class="text-u2 uppercase">u2</p>
-    </TextShowcase>
-    <TextShowcase prefix="text" size="u1">
-      <p class="text-u1 uppercase">u1</p>
-    </TextShowcase>
-    <TextShowcase prefix="text" size="base">
-      <p class="text-base uppercase">base</p>
-    </TextShowcase>
-    <TextShowcase prefix="text" size="d1">
-      <p class="text-d1 uppercase">d1</p>
-    </TextShowcase>
-    <TextShowcase prefix="text" size="u6">
-      <p class="text-d2 uppercase">d2</p>
-    </TextShowcase>
-    <TextShowcase prefix="text" size="d3">
-      <p class="text-d3 uppercase">d3</p>
-    </TextShowcase>
+    {#each responsiveFontClasses as className}
+      <div>
+        <p class="{className} uppercase">{className.replace('text-','')}</p>
+        <code>{className}</code>
+      </div>
+    {/each}
   </div>
   <h3 class="mt-24 mb-8">Font Size Sufixes</h3>
-  <div class="flex flex-wrap items-baseline gap-base">
-    <code>76-80</code>
-    <code>66-72</code>
-    <code>60-64</code>
-    <code>56-64</code>
-    <code>52-56</code>
-    <code>48-64</code>
-    <code>44-48</code>
-    <code>40-48</code>
-    <code>36-40</code>
-    <code>32-40</code>
-    <code>30-40</code>
-    <code>30-32</code>
-    <code>28-32</code>
-    <code>24-32</code>
-    <code>20-32</code>
-    <code>20-24</code>
-    <code>18-24</code>
-    <code>16-24</code>
-    <code>14-20</code>
-    <code>12-16</code>
+  <div>
+    {#each fontSizeSufixes as sufix}
+      <div class="m-base">
+        <p class="{sufix}">{sufix.replace('text', 'Size').replace('-', ' ').replace('-', ' Letter ')}</p>
+        <code>{sufix.replace('text-','')}</code>
+      </div>
+    {/each}
   </div>
   <h3 class="mt-24 mb-8">Letter Spacing Sufixes</h3>
   <p>R stands for rem values</p>
-  <div class="flex flex-wrap items-baseline gap-base track">
-    <code>0</code>
-    <code>053</code>
-    <code>063</code>
-    <code>075</code>
-    <code>088</code>
-    <code>094</code>
-    <code>1</code>
-    <code>1025</code>
-    <code>1033</code>
-    <code>1042</code>
-    <code>105</code>
-    <code>1083</code>
-    <code>2017</code>
-    <code>2021</code>
-    <code>205</code>
-    <code>2061</code>
-    <code>3</code>
-    <code>r001</code>
-    <code>r0018</code>
-    <code>r0025</code>
-    <code>r003</code>
-    <code>r0033</code>
-    <code>r004</code>
-    <code>r0045</code>
-    <code>r005</code>
-    <code>r0054</code>
-    <code>r006</code>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 items-baseline gap-base track">
+    {#each letterSpacingSufixes as sufix}
+    <div class="m-base">
+      <p class="{sufix} uppercase">{sufix.replace('-', ' ')}</p>
+      <code>{sufix.replace('tracking-','')}</code>
+    </div>
+    {/each}
   </div>
 </section>
 <section class="container">
@@ -125,68 +164,34 @@
   <p>Heading work using the proper tag, but in case you want to use the styles on another tag you can use <code>heading-[1-4]</code> classnames.</p>
   <p>To check how headings behave on different screen sizes please resize this window.</p>
   <div class="flex flex-wrap items-end my-24 gap-base">
-    <div>
-      <h1>Heading 1</h1>
-      <code>heading-1</code>
-    </div>
-    <div>
-      <h2>Heading 2</h2>
-      <code>heading-2</code>
-    </div>
-    <div>
-      <h3>Heading 3</h3>
-      <code>heading-3</code>
-    </div>
-    <div>
-      <h4>Heading 4</h4>
-      <code>heading-4</code>
-    </div>
+    {#each headingClasses as className}
+      <div>
+        <div class="{className} capitalize">{className.replace('-', ' ')}</div>
+        <code>{className}</code>
+      </div>
+    {/each}
   </div>
 </section>
 <section class="container">
   <h2>Display text</h2>
   <div class="flex flex-wrap items-end my-24 gap-base">
-    <div>
-      <div class="display-bg">Display big</div>
-      <code>display-bg</code>
-    </div>
-    <div>
-      <div class="display">Display normal</div>
-      <code>display</code>
-    </div>
-    <div>
-      <div class="display-sm">Display small</div>
-      <code>display-sm</code>
-    </div>
-    <div>
-      <div class="display-tn">Display tiny</div>
-      <code>display-tn</code>
-    </div>
+    {#each displayClasses as className}
+      <div>
+        <div class="{className.className} capitalize">{className.name}</div>
+        <code>{className.className}</code>
+      </div>
+    {/each}
   </div>
 </section>
 <section class="container">
   <h2>Body Text Variants</h2>
   <div class="flex flex-wrap items-end my-24 gap-base">
-    <div>
-      <p class="body-caption-lg">Caption large</p>
-      <code>body-caption-lg</code>
-    </div>
-    <div>
-      <p class="body-body-1">Body 1</p>
-      <code>body-body-1</code>
-    </div>
-    <div>
-      <p class="body-body-2">Body 2</p>
-      <code>body-body-2</code>
-    </div>
-    <div>
-      <p class="body-caption">Caption</p>
-      <code>body-caption</code>
-    </div>
-    <div>
-      <p class="body-overline">Overline</p>
-      <code>body-overline</code>
-    </div>
+    {#each textVariantsClasses as className}
+      <div>
+        <div class="{className.className} capitalize">{className.name}</div>
+        <code>{className.className}</code>
+      </div>
+    {/each}
   </div>
 </section>
 <section class="container">
