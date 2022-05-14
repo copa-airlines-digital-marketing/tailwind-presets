@@ -22,6 +22,7 @@
       <h4 class="mt-base mb-8">Global styles</h4>
       <a href="/colors">Colors</a>
       <a href="/spacing">Spacing</a>
+      <a href="/columns">Columns</a>
       <a href="/typography">Typography</a>
       <a href="/shadows">Shadows</a>
     </nav>

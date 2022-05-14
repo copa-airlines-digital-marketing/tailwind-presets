@@ -6,7 +6,7 @@
   import Heading from '../components/heading.svelte';
 </script>
 
-<Heading title="Copa Airlines Web Design System" subtitle="Powered by tailwind" bg="primary-main" ></Heading>
+<Heading title="Copa Airlines Web Design System" subtitle="Powered by tailwind" bg="bg-primary-main" ></Heading>
 
 <div class="container my-base">
   <p><a href="https://www.figma.com/file/sE4j8vrUq5a0mUfEbFS65n/Copa-Design-System-2.0?node-id=3453%3A25495" target="_blank">Figma Project</a></p>
