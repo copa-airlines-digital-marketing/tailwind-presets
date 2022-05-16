@@ -17,7 +17,7 @@
 <div>
   {#if showNav}
     <div class="w-full bg-transparent h-screen absolute top-0 left-0" on:click={toggleNav}></div>
-    <nav class="flex flex-col p-16 bg-bg-light-blue h-screen absolute top-0 left-0 w-3/4 sm:w-2/3 md:w-2/12 md:p-24 gap-16" transition:fly="{{x: -75, duration: 500, easing: quintOut}}">
+    <nav class="flex flex-col p-16 bg-bg-light-blue h-screen absolute top-0 left-0 w-3/4 sm:w-2/3 md:w-2/12 md:p-24 gap-16 z-50" transition:fly="{{x: -75, duration: 500, easing: quintOut}}">
       <a href="/">Home</a>
       <div class="flex flex-col">
         <h4>Global styles</h4>

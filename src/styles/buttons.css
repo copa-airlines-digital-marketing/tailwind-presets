@@ -4,7 +4,7 @@
   [type='button'],
   [type='reset'],
   [type='submit'] {
-    @apply bg-primary-main border border-primary-main cursor-pointer font-medium gap-8 inline-flex items-center px-24 py-8 relative rounded-lg text-grey-50 m-4 transition-all;
+    @apply bg-primary-main border border-primary-main cursor-pointer font-medium gap-8 inline-flex items-center px-24 py-8 relative rounded-lg text-grey-50 m-4 transition-buttons duration-300;
 
     &:hover,
     &:focus {
@@ -28,7 +28,7 @@
 
 @layer components {
   .btn {
-    @apply bg-primary-main border border-primary-main font-medium gap-8 inline-flex items-center px-24 py-8 relative rounded-lg text-grey-50 m-4 transition-all;
+    @apply bg-primary-main border border-primary-main font-medium gap-8 inline-flex items-center px-24 py-8 relative rounded-lg text-grey-50 m-4 transition-buttons duration-300;
 
     &:hover,
     &:focus {

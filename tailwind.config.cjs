@@ -372,6 +372,11 @@ module.exports = {
       136: remValue(136),
       152: remValue(152),
 
+    },
+    extend: {
+      transitionProperty: {
+        buttons: 'outline, color, background-color, border-color, text-decoration-color, fill, stroke'
+      }
     }
   }
 }
