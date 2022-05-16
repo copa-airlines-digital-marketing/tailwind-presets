@@ -215,6 +215,7 @@
   <div class="flex flex-wrap gap-base">
     <code>0</code>
     <code>1</code>
+    <code>2em</code>
   </div>
 </section>
 <section class="container mt-32 py-24 bg-bg-light-blue">

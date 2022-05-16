@@ -11,7 +11,7 @@
 <section class="container">
   <h2>Columns with Grid</h2>
   <p>Use <code>col-span</code> classes</p>
-  <p>Flex is not recomended</p>
+  <p>Flex is not recomended, use grid for a more consistent result</p>
 
   <h3 class="mb-16 mt-56">1 COL</h3>
   <div class="grid">

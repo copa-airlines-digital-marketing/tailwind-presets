@@ -1,0 +1,275 @@
+@layer base {
+
+  button,
+  [type='button'],
+  [type='reset'],
+  [type='submit'] {
+    @apply bg-primary-main border border-primary-main cursor-pointer font-medium gap-8 inline-flex items-center px-24 py-8 relative rounded-lg text-grey-50 m-4 transition-all;
+
+    &:hover,
+    &:focus {
+      @apply bg-primary-ultradark border-primary-ultradark;
+    }
+
+    &:active {
+      @apply bg-primary-main border-primary-main;
+    }
+
+    &:active,
+    &:focus {
+      @apply outline outline-1 outline-offset-2 outline-primary-main;
+    }
+
+    &:disabled {
+      @apply bg-grey-100 border-grey-100 text-grey-500 outline-none cursor-not-allowed;
+    }
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-primary-main border border-primary-main font-medium gap-8 inline-flex items-center px-24 py-8 relative rounded-lg text-grey-50 m-4 transition-all;
+
+    &:hover,
+    &:focus {
+      @apply bg-primary-ultradark border-primary-ultradark;
+    }
+
+    &:active {
+      @apply bg-primary-main border-primary-main;
+    }
+
+    &:active,
+    &:focus {
+      @apply outline outline-1 outline-offset-2 outline-primary-main;
+    }
+
+    &:disabled {
+      @apply bg-grey-100 border-grey-100 text-grey-500 outline-none;
+    }
+
+    &-sm {
+      @apply py-4 px-16 rounded text-12-16;
+    }
+
+    &-lg {
+      @apply py-12 px-24;
+    }
+
+    &-xl {
+      @apply py-24 text-24-32;
+    }
+
+    &-rounded {
+      @apply rounded-3xl;
+
+      &.btn-sm {
+        @apply p-8;
+      }
+
+      &.btn-lg {
+        @apply rounded-[56px];
+      }
+
+      &.btn-xl {
+        @apply px-32 rounded-[80px];
+      }
+    }
+
+    &-circle {
+      @apply p-8 rounded-full;
+
+      &.btn-sm {
+        @apply p-4;
+      }
+
+      &.btn-lg {
+        @apply p-12;
+      }
+
+      &.btn-xl {
+        @apply p-24;
+      }
+    }
+
+    &-ultradark {
+      @apply bg-primary-ultradark border-primary-ultradark;
+
+      &:hover,
+      &:focus {
+        @apply bg-primary-main border-primary-main;
+      }
+
+      &:active {
+        @apply bg-primary-main border-primary-ultradark;
+      }
+
+      &:disabled {
+        @apply bg-grey-100 border-grey-100 text-grey-500 outline-none;
+      }
+    }
+
+    &-light {
+      @apply bg-primary-light border-primary-light;
+
+      &:hover,
+      &:focus {
+        @apply bg-primary-ultradark border-primary-ultradark;
+      }
+
+      &:active,
+      &:focus {
+        @apply outline-none;
+      }
+
+      &:active {
+        @apply bg-primary-light border-primary-light;
+      }
+
+      &:disabled {
+        @apply bg-grey-100 border-grey-100 text-grey-500 outline-none;
+      }
+    }
+
+    &-outline {
+      @apply bg-transparent border-primary-main text-primary-main;
+
+      &:active,
+      &:focus,
+      &:hover {
+        @apply text-grey-50;
+      }
+
+      &:disabled {
+        @apply bg-grey-200 border-grey-500 text-grey-500 outline-none;
+      }
+
+      &-light {
+        @apply bg-transparent border-primary-light text-primary-light;
+
+        &:active,
+        &:focus,
+        &:hover {
+          @apply text-grey-50;
+        }
+
+        &:focus,
+        &:hover {
+          @apply bg-primary-light border-primary-light;
+        }
+
+        &:active {
+          @apply bg-primary-main border-primary-main;
+        }
+
+        &:disabled {
+          @apply bg-grey-200 border-grey-500 text-grey-500 outline-none;
+        }
+      }
+
+      &-grey {
+        @apply bg-transparent border-grey-600 text-grey-600;
+
+        &:active,
+        &:focus,
+        &:hover {
+          @apply text-grey-50;
+        }
+
+        &:focus,
+        &:hover {
+          @apply bg-grey-600 border-grey-600;
+        }
+
+        &:active,
+        &:focus {
+          @apply outline-grey-700;
+        }
+
+        &:active {
+          @apply bg-grey-700 border-grey-700;
+        }
+
+        &:disabled {
+          @apply bg-grey-200 border-grey-500 text-grey-500 outline-none;
+        }
+      }
+
+      &-invert {
+        @apply bg-transparent border-grey-50 text-grey-50;
+
+        &:active,
+        &:focus,
+        &:hover {
+          @apply bg-grey-50 border-grey-50 text-primary-light;
+        }
+
+        &:active,
+        &:focus {
+          @apply outline-grey-50;
+        }
+
+        &:disabled {
+          @apply bg-transparent border-grey-50 opacity-50 text-grey-50 outline-none;
+        }
+      }
+    }
+
+    &-transparent {
+      @apply bg-transparent border-transparent text-primary-main;
+
+      &:active,
+      &:focus,
+      &:hover {
+        @apply bg-bg-light-blue border-bg-light-blue;
+      }
+
+      &:active,
+      &:focus {
+        @apply outline-primary-faded;
+      }
+
+      &:disabled {
+        @apply bg-transparent border-transparent opacity-50 text-grey-500 outline-none;
+      }
+
+      &-grey {
+        @apply bg-transparent border-transparent text-grey-600;
+
+        &:active,
+        &:focus,
+        &:hover {
+          @apply bg-bg-light-blue border-bg-light-blue text-primary-main;
+        }
+
+        &:active,
+        &:focus {
+          @apply outline-primary-faded;
+        }
+
+        &:disabled {
+          @apply bg-transparent border-transparent opacity-50 text-grey-500 outline-none;
+        }
+      }
+
+      &-invert {
+        @apply bg-transparent border-transparent text-grey-50;
+
+        &:active,
+        &:focus,
+        &:hover {
+          @apply bg-grey-50-10 border-transparent;
+        }
+
+        &:active,
+        &:focus {
+          @apply outline-grey-50;
+        }
+
+        &:disabled {
+          @apply bg-transparent border-transparent opacity-50 text-grey-300 outline-none;
+        }
+      }
+    }
+  }
+}

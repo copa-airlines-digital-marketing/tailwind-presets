@@ -1,0 +1,9 @@
+@layer base {
+  ul {
+    @apply list-disc pl-2em;
+  }
+
+  ol {
+    @apply list-decimal pl-2em;
+  }
+}

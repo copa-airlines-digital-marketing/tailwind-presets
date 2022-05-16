@@ -155,6 +155,19 @@ module.exports = {
         },
 
       })
+    }),
+    plugin(function ({
+      matchUtilities,
+      theme
+    }) {
+      matchUtilities({
+        square: (value) => ({
+          height: value,
+          width: value
+        }),
+      }, {
+        values: theme('spacing')
+      })
     })
   ],
   theme: {
@@ -167,6 +180,7 @@ module.exports = {
     colors: {
       inherit: 'inherit',
       transparent: 'transparent',
+      current: 'currentColor',
       primary: {
         ultradark: '#001A66',
         dark: '#002880',
@@ -215,8 +229,16 @@ module.exports = {
       },
       fares: {
         economy: {
+          basic: '#006CB3',
+          classic: '#0E4A81',
           full: '#0D3050'
-        }
+        },
+        business: {
+          promo: '#4B5D67',
+          full: '#283238'
+        },
+        special: '#2A7795',
+        first: '#000000'
       }
     },
     container: {
@@ -329,6 +351,7 @@ module.exports = {
       lg: '1367px'
     },
     spacing: {
+      '2em': '2em',
       0: 0,
       1: remValue(1),
       4: remValue(4),

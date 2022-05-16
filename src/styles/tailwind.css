@@ -1,5 +1,7 @@
 @import "./spacing.css";
 @import "./typography.css";
+@import "./icons.css";
+@import "./buttons.css";
 
 @tailwind base;
 @tailwind components;

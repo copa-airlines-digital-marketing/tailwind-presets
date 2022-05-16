@@ -286,7 +286,7 @@
     </TextShowcase>
   </div>
   <h3 class="mt-16">Links</h3>
-  <p>The basic styles applies to the <a href="#">a</a> tag</p>
+  <p>The basic styles applies to the <a href="#test">a</a> tag</p>
   <h3>Variants</h3>
   <div class="flex flex-wrap items-end my-8 gap-base">
     <TextShowcase prefix="link" size="">

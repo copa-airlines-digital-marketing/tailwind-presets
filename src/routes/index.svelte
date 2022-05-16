@@ -22,5 +22,11 @@
     <li>Make sure you know <a href="https://tailwindcss.com/docs/installation">Tailwind documentation</a></li>
     <li>Components are available as </li>
   </ol>
+  <h2>Considerations</h2>
+  <ul>
+    <li>Icons are better when used as an svg so this CSS library does not contain any, to get Copa Airlines Icons SVGs please visit <a href="https://www.figma.com/file/sE4j8vrUq5a0mUfEbFS65n/Copa-Design-System-2.0?node-id=3954%3A33799" target="_blank">Copa Design System 2.0</a></li>
+    <li>SVG will have a height and width of 24 px by default</li>
+    <li>Paths will have a fill-current value by default</li>
+  </ul>
 </div>
 
