@@ -34,7 +34,7 @@
       <a href="/aditional-utilities">Additional Utilities</a>
     </nav>
   {/if}
-  <div class="max-h-screen overflow-y-scroll scroll-smooth">
+  <div class="max-h-screen overflow-y-auto scroll-smooth">
     <slot/>
   </div>
   
