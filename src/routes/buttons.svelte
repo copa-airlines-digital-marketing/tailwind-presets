@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Aditional Utilities · Copa Airlines Web Design System</title>
+  <title>Buttons · Copa Airlines Web Design System</title>
 </svelte:head>
 
 <script lang="ts">
@@ -12,7 +12,7 @@
 
 </script>
 
-<Heading title="Buttons" subtitle="Components" bg="bg-dark-orange"></Heading>
+<Heading title="Buttons" subtitle="Master Components" bg="bg-dark-orange"></Heading>
 
 <section class="container">
   <h2>Shapes</h2>

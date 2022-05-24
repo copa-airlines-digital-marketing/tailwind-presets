@@ -1,0 +1,49 @@
+@layer components {
+  .input-helper {
+    @apply flex gap-4 items-center text-12-16 text-grey-600;
+
+    svg {
+      @apply square-12;
+    }
+
+    path {
+      @apply fill-grey-400;
+    }
+
+    &-error {
+      @apply flex gap-4 items-center text-12-16 text-grey-600;
+
+      svg {
+        @apply square-12;
+      }
+
+      path {
+        @apply fill-error-main;
+      }
+    }
+
+    &-warning {
+      @apply flex gap-4 items-center text-12-16 text-grey-600;
+
+      svg {
+        @apply square-12;
+      }
+
+      path {
+        @apply fill-warning-main;
+      }
+    }
+
+    &-success {
+      @apply flex gap-4 items-center text-12-16 text-grey-600;
+
+      svg {
+        @apply square-12;
+      }
+
+      path {
+        @apply fill-success-main;
+      }
+    }
+  }
+}

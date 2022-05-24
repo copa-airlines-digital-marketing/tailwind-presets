@@ -1,7 +1,10 @@
 @import "./spacing.css";
 @import "./typography.css";
 @import "./icons.css";
+@import "./images.css";
 @import "./buttons.css";
+@import "./inputs.css";
+@import "./attribute-pill.css";
 
 @tailwind base;
 @tailwind components;

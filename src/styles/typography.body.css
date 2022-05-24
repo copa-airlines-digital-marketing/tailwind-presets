@@ -1,6 +1,6 @@
 @layer utilities {
   .body {
-    @apply text-14-20 text-grey-600;
+    @apply text-14-20 text-grey-600 max-w-prose;
 
     &-caption {
       @apply text-12-16;

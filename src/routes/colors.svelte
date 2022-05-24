@@ -207,7 +207,7 @@
           <p class="text-d2 uppercase text-grey-800">{getcolorName(colorObject)} · {getcolorHex(colorObject)}</p>
           <div class="h-72 w-136 rounded-lg mt-8 {getcolorClass(colorObject)}" >
           </div>
-          <code class="normal-case my-8">{getcolorHex(colorObject).replace('bg-','')}</code>
+          <code class="normal-case my-8">{getcolorClass(colorObject).replace('bg-','')}</code>
         </div>
       {/each}
     </div>

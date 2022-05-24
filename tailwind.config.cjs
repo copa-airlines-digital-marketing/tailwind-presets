@@ -354,6 +354,7 @@ module.exports = {
       '2em': '2em',
       0: 0,
       1: remValue(1),
+      2: remValue(2),
       4: remValue(4),
       8: remValue(8),
       12: remValue(12),

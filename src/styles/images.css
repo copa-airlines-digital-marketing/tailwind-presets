@@ -1,0 +1,31 @@
+@layer base {
+  img {
+    @apply max-w-full h-auto;
+  }
+}
+
+@layer components {
+  .img {
+    @apply max-w-full h-auto;
+
+    &-vertical {
+      @apply max-h-full w-auto;
+    }
+  }
+
+  .destination-badge {
+    @apply border-2 border-grey-500 p-4 rounded-full square-72;
+
+    img {
+      @apply rounded-full;
+    }
+
+    &-invert {
+      @apply border-2 border-grey-50 p-4 rounded-full square-72;
+
+      img {
+        @apply rounded-full;
+      }
+    }
+  }
+}

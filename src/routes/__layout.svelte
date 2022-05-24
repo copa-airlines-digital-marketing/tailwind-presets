@@ -26,10 +26,14 @@
         <a href="/columns">Columns</a>
         <a href="/typography">Typography</a>
         <a href="/shadows">Shadows</a>
+        <a href="/surfaces">Surfaces</a>
+        <a href="/images">Images</a>
       </div>
       <div class="flex flex-col">
         <h4>Components</h4>
         <a href="/buttons">Buttons</a>
+        <a href="/inputs">Inputs</a>
+        <a href="/attribute-pill">Attribute Pill</a>
       </div>
       <a href="/aditional-utilities">Additional Utilities</a>
     </nav>
