@@ -1,0 +1,23 @@
+@layer components {
+  .breadcrums {
+    @apply caption flex gap-8 list-none pl-0;
+
+    li {
+      @apply flex gap-8;
+    }
+
+    >* {
+      @@apply hidden;
+
+      &:nth-last-child(-n+3) {
+        @apply flex;
+      }
+    }
+
+    @screen sm {
+      >* {
+        @@apply flex;
+      }
+    }
+  }
+}

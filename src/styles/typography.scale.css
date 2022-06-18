@@ -8,7 +8,7 @@
       }
 
       &2 {
-        @apply font-semibold text-12-16 tracking-1;
+        @apply text-12-16 tracking-1;
       }
 
       &3 {
@@ -31,7 +31,7 @@
       }
 
       &2 {
-        @apply font-bold text-20-24 -tracking-063;
+        @apply text-20-24 -tracking-063;
 
         @screen sm {
           @apply text-24-32 -tracking-075;
@@ -47,7 +47,7 @@
       }
 
       &3 {
-        @apply font-bold text-24-32 -tracking-075;
+        @apply text-24-32 -tracking-075;
 
         @screen sm {
           @apply text-30-40 -tracking-094;
@@ -63,7 +63,7 @@
       }
 
       &4 {
-        @apply font-bold text-30-32 -tracking-1025;
+        @apply text-30-32 -tracking-1025;
 
         @screen sm {
           @apply text-36-40 -tracking-105;
@@ -79,7 +79,7 @@
       }
 
       &5 {
-        @apply font-bold text-32-40 -tracking-1033;
+        @apply text-32-40 -tracking-1033;
 
         @screen sm {
           @apply text-44-48 -tracking-1083;
@@ -95,7 +95,7 @@
       }
 
       &6 {
-        @apply font-bold text-36-40 -tracking-1042;
+        @apply text-36-40 -tracking-1042;
 
         @screen sm {
           @apply text-56-64 -tracking-2021;

@@ -1,15 +1,3 @@
-@layer base {
-
-  a {
-    @apply text-primary-light cursor-pointer;
-
-    &:hover {
-      @apply underline;
-    }
-  }
-
-}
-
 @layer utilities {
   .link {
     @apply text-primary-light cursor-pointer;

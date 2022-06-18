@@ -34,6 +34,7 @@
         <a href="/buttons">Buttons</a>
         <a href="/inputs">Inputs</a>
         <a href="/attribute-pill">Attribute Pill</a>
+        <a href="/breadcrums">Breadcrumbs</a>
       </div>
       <a href="/aditional-utilities">Additional Utilities</a>
     </nav>

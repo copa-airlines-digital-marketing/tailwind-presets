@@ -1,9 +1,0 @@
-@layer base {
-  svg {
-    @apply square-24;
-
-    path {
-      @apply fill-current;
-    }
-  }
-}

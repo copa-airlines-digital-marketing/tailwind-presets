@@ -1,11 +1,3 @@
-@layer base {
-
-  em {
-    @apply text-grey-700 not-italic;
-  }
-
-}
-
 @layer utilities {
   .emphasis {
     @apply text-grey-700 not-italic;

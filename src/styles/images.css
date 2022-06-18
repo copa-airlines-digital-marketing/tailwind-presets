@@ -1,9 +1,3 @@
-@layer base {
-  img {
-    @apply max-w-full h-auto;
-  }
-}
-
 @layer components {
   .img {
     @apply max-w-full h-auto;
