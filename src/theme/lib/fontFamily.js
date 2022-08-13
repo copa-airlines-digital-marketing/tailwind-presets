@@ -1,6 +1,6 @@
 const BASE_FONT_FAMILY = {
   heading: ['Gilroy', 'Helvetica', 'Arial', 'sans-serif'],
-  body: ['SuisseIntl', 'Helvetica', 'Arial', 'sans-serif']
+  sans: ['SuisseIntl', 'Helvetica', 'Arial', 'sans-serif']
 }
 
 const getOverrides = () => {
