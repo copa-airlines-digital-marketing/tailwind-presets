@@ -12,6 +12,9 @@ const cleanObject = (plugins, theme) => {
 }
 
 module.exports = {
+  corePlugins: {
+    container: false
+  },
   prefix: constants.default.PREFIX,
   ...cleanObject(plugins.getPlugins(), theme.getTheme())
 }

@@ -1,13 +1,15 @@
 const colors = require('./lib/colors')
+const columns = require('./lib/columns')
+const screens = require('./lib/screens')
+const shadows = require('./lib/shadows')
+const spacing = require('./lib/spacing')
 
 const getOverrides = () => {
   return {
-    borderRadius: ,
-    boxShadow: ,
+    boxShadow: shadows.getOverrides(),
     colors: colors.getOverrides(),
-    columns: ,
-    container: ,
-    dropShadow: ,
+    columns: columns.getOverrides(),
+    dropShadow: shadows.getOverrides(),
     fontFamily: ,
     fontSize: ,
     fontWeight: ,
@@ -16,8 +18,8 @@ const getOverrides = () => {
     gridTemplateColumns: ,
     letterSpacing: ,
     lineHeight: ,
-    screens: ,
-    spacing: ,
+    screens: screens.getOverrides(),
+    spacing: spacing.getOverrides(),
   }
 }
 
@@ -35,20 +37,6 @@ module.exports = {
 
 const old = {
   theme: {
-    boxShadow: {
-      tn: '0px 1px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.08)',
-      md: '0px 4px 5px rgba(0, 0, 0, 0.07), 0px 3px 15px rgba(0, 0, 0, 0.08), 0px 2px 4px rgba(0, 0, 0, 0.12)',
-      lg: '0px 12px 17px rgba(0, 0, 0, 0.06), 0px 5px 22px rgba(0, 0, 0, 0.06), 0px 7px 8px rgba(0, 0, 0, 0.1)',
-      modal: '0px 24px 24px 12px rgba(0, 0, 0, 0.0987885)'
-    },
-    colors: colors,
-    container: {
-      center: true,
-      padding: {
-        DEFAULT: remValue(16),
-        md: remValue(24)
-      }
-    },
     fontFamily: {
       sans: ['SuisseIntl', 'Helvetica', 'Arial', 'sans-serif'],
       heading: ['Gilroy', 'Helvetica', 'Arial', 'sans-serif'],
@@ -146,34 +134,5 @@ const old = {
       r0054: '0.054rem',
       r006: '0.06rem',
     },
-    screens: {
-      sm: '600px',
-      md: '960px',
-      lg: '1367px'
-    },
-    spacing: {
-      '2em': '2em',
-      0: 0,
-      1: remValue(1),
-      2: remValue(2),
-      4: remValue(4),
-      8: remValue(8),
-      12: remValue(12),
-      16: remValue(16),
-      24: remValue(24),
-      32: remValue(32),
-      40: remValue(40),
-      48: remValue(48),
-      56: remValue(56),
-      64: remValue(64),
-      72: remValue(72),
-      80: remValue(80),
-      88: remValue(88),
-      96: remValue(96),
-      112: remValue(112),
-      136: remValue(136),
-      152: remValue(152),
-
-    }
   }
 }

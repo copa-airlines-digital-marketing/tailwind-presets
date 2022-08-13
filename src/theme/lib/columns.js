@@ -1,16 +1,27 @@
-const override = {
-  1: '1',
-  2: '2',
-  3: '3',
-  4: '4',
-
+const BASE_COLUMNS = {
+  auto: 'auto'
 }
 
-const extend = {
-
+const generateUnitColumns = (unit, start, end, step) => {
+  const result = {}
+  for (let i = start; i <= end; i = i + step) {
+    result[i.toString()] = i.toString() + unit
+  }
+  return result
 }
 
-export default {
-  override: override,
-  extend: extend
+const getOverrides = () => {
+  return {
+    ...BASE_COLUMNS,
+    ...generateUnitColumns('', 1, 4, 1)
+  }
+}
+
+const getExtensions = () => {
+  return {}
+}
+
+module.exports = {
+  getOverrides: getOverrides,
+  getExtensions: getExtensions
 }
