@@ -111,64 +111,7 @@ const remValue = (size) => `${size/baseFontSize}rem`
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   plugins: [
-    function ({
-      addComponents
-    }) {
-      addComponents({
-        '.container': {
-          maxWidth: '100%',
-          width: `calc(100% - ${remValue(32)})`,
-          marginTop: remValue(16),
-          marginBottom: remValue(16),
-          '@screen sm': {
-            maxWidth: '100%',
-            width: remValue(560),
-            marginTop: remValue(24),
-            marginBottom: remValue(24)
-          },
-          '@screen md': {
-            maxWidth: '100%',
-            width: `calc(100% - ${remValue(144)})`,
-            marginTop: remValue(32),
-            marginBottom: remValue(32)
-          },
-          '@screen lg': {
-            maxWidth: '100%',
-            width: remValue(1208),
-            marginTop: remValue(40),
-            marginBottom: remValue(40)
-          }
-        }
-      })
-    },
-    plugin(function ({
-      addBase,
-      theme
-    }) {
-      addBase({
-        'html': {
-          fontSize: theme('fontSize.16-24'),
-          color: theme('colors.grey.600')
-        },
-        'p': {
-          marginTop: theme('spacing.8')
-        },
 
-      })
-    }),
-    plugin(function ({
-      matchUtilities,
-      theme
-    }) {
-      matchUtilities({
-        square: (value) => ({
-          height: value,
-          width: value
-        }),
-      }, {
-        values: theme('spacing')
-      })
-    })
   ],
   theme: {
     boxShadow: {

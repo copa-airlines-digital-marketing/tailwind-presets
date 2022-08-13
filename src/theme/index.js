@@ -1,66 +1,12 @@
-const colors = require('./colors')
+const colors = require('./lib/colors')
 
-module.exports = {
-  plugins: [
-    function ({
-      addComponents
-    }) {
-      addComponents({
-        '.container': {
-          maxWidth: '100%',
-          width: `calc(100% - ${remValue(32)})`,
-          marginTop: remValue(16),
-          marginBottom: remValue(16),
-          '@screen sm': {
-            maxWidth: '100%',
-            width: remValue(560),
-            marginTop: remValue(24),
-            marginBottom: remValue(24)
-          },
-          '@screen md': {
-            maxWidth: '100%',
-            width: `calc(100% - ${remValue(144)})`,
-            marginTop: remValue(32),
-            marginBottom: remValue(32)
-          },
-          '@screen lg': {
-            maxWidth: '100%',
-            width: remValue(1208),
-            marginTop: remValue(40),
-            marginBottom: remValue(40)
-          }
-        }
-      })
-    },
-    plugin(function ({
-      addBase,
-      theme
-    }) {
-      addBase({
-        'html': {
-          fontSize: theme('fontSize.16-24'),
-          color: theme('colors.grey.600')
-        },
-        'p': {
-          marginTop: theme('spacing.8')
-        },
+export const getTheme = () => {
+  return {
 
-      })
-    }),
-    plugin(function ({
-      matchUtilities,
-      theme
-    }) {
-      matchUtilities({
-        square: (value) => ({
-          height: value,
-          width: value
-        }),
-      }, {
-        values: theme('spacing')
-      })
-    })
-  ],
+  }
+}
+
+const old = {
   theme: {
     boxShadow: {
       tn: '0px 1px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.08)',
@@ -201,11 +147,6 @@ module.exports = {
       136: remValue(136),
       152: remValue(152),
 
-    },
-    extend: {
-      transitionProperty: {
-        buttons: 'outline, color, background-color, border-color, text-decoration-color, fill, stroke'
-      }
     }
   }
 }

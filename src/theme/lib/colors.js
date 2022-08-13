@@ -1,8 +1,12 @@
-module.exports = {
+export default {
   inherit: 'inherit',
   transparent: 'transparent',
   current: 'currentColor',
   primary: {
+    DEFAULT: '#0032A0',
+    300: '#0E68FF',
+    400: '#0032A0'
+
     ultradark: '#001A66',
     dark: '#002880',
     light: '#0E68FF',
