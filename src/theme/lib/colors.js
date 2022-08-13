@@ -1,68 +1,54 @@
-export default {
+const BASE_COLORS = {
   inherit: 'inherit',
   transparent: 'transparent',
   current: 'currentColor',
   primary: {
-    DEFAULT: '#0032A0',
-    300: '#0E68FF',
-    400: '#0032A0'
-
-    ultradark: '#001A66',
-    dark: '#002880',
-    light: '#0E68FF',
-    main: '#0032A0',
-    ultralight: '#D6E3FF',
-    faded: `#0E68FF${fade[40]}`
+    DEFAULT: 'rgb(var(--color-primary) / <alpha-value>)',
+    ultralight: 'rgb(var(--color-primary-ultralight) / <alpha-value>)',
+    light: 'rgb(var(--color-primary-light) / <alpha-value>)',
+    dark: 'rgb(var(--color-primary-dark) / <alpha-value>)',
+    ultradark: 'rgb(var(--color-primary-ultradark) / <alpha-value>)',
   },
-  secondary: {
-    main: '#00A3E0',
-    faded: `#00A3E0${fade[50]}`
+  secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
+  backgound: {
+    lightblue: 'rgb(var(--color-background-lightblue) / <alpha-value>)',
+    paper: 'rgb(var(--color-background-paper) / <alpha-value>)',
   },
-  pardo: '#866D4B',
-  gold: '#AD7C59',
-  'dark-orange': '#B15C37',
-  'light-orange': '#E2C070',
-  'prefermember-blue': '#072241',
-  bg: {
-    'light-blue': '#EFF5FF',
-    paper: '#FCFCFC'
+  alternative: {
+    pardo: 'rgb(var(--color-pardo) / <alpha-value>)',
+    gold: 'rgb(var(--color-gold) / <alpha-value>)',
+    darkorange: 'rgb(var(--color-darkorange) / <alpha-value>)',
+    lightorange: 'rgb(var(--color-lightorange) / <alpha-value>)',
+    prefermemberBlue: 'rgb(var(--color-prefermemberBlue) / <alpha-value>)',
   },
-  warning: {
-    main: '#FFC82C',
-    faded: `#FFC82C${fade[15]}`
-  },
-  error: {
-    main: '#D52525',
-    faded: `#D52525${fade[15]}`
-  },
-  success: {
-    main: '#0C7E3E',
-    faded: `#0C7E3E${fade[15]}`
+  status: {
+    warning: 'rgb(var(--color-warning) / <alpha-value>)',
+    error: 'rgb(var(--color-error) / <alpha-value>)',
+    success: 'rgb(var(--color-success) / <alpha-value>)',
   },
   grey: {
-    800: '#121212',
-    700: '#333333',
-    600: '#666666',
-    500: '#999999',
-    400: '#AAAAAB',
-    300: '#CCCCCB',
-    200: '#DBDAD8',
-    100: '#EFEFEE',
-    50: '#FFFFFF',
-    '50-20': `#FFFFFF${fade[20]}`,
-    '50-10': `#FFFFFF${fade[10]}`
-  },
-  fares: {
-    economy: {
-      basic: '#006CB3',
-      classic: '#0E4A81',
-      full: '#0D3050'
-    },
-    business: {
-      promo: '#4B5D67',
-      full: '#283238'
-    },
-    special: '#2A7795',
-    first: '#000000'
+    800: 'rgb(var(--color-grey-800) / <alpha-value>)',
+    700: 'rgb(var(--color-grey-700) / <alpha-value>)',
+    600: 'rgb(var(--color-grey-600) / <alpha-value>)',
+    500: 'rgb(var(--color-grey-500) / <alpha-value>)',
+    400: 'rgb(var(--color-grey-400) / <alpha-value>)',
+    300: 'rgb(var(--color-grey-300) / <alpha-value>)',
+    200: 'rgb(var(--color-grey-200) / <alpha-value>)',
+    100: 'rgb(var(--color-grey-100) / <alpha-value>)',
+    75: 'rgb(var(--color-grey-75) / <alpha-value>)',
+    0: 'rgb(var(--color-grey-0) / <alpha-value>)',
   }
+}
+
+const getOverrides = () => {
+  return BASE_COLORS
+}
+
+const getExtensions = () => {
+  return {}
+}
+
+module.exports = {
+  getOverrides: getOverrides,
+  getExtensions: getExtensions
 }

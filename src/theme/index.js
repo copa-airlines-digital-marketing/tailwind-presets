@@ -1,9 +1,36 @@
 const colors = require('./lib/colors')
 
-export const getTheme = () => {
+const getOverrides = () => {
   return {
-
+    borderRadius: ,
+    boxShadow: ,
+    colors: colors.getOverrides(),
+    columns: ,
+    container: ,
+    dropShadow: ,
+    fontFamily: ,
+    fontSize: ,
+    fontWeight: ,
+    gridColumn: ,
+    gridColumnStart: ,
+    gridTemplateColumns: ,
+    letterSpacing: ,
+    lineHeight: ,
+    screens: ,
+    spacing: ,
   }
+}
+
+const getExtensions = () => {
+  return {
+    content: ,
+    opacity: ,
+  }
+}
+
+module.exports = {
+  getOverrides: getTheme,
+  getExtensions: getExtension
 }
 
 const old = {

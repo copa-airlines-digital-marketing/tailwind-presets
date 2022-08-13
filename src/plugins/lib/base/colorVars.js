@@ -14,11 +14,11 @@ const getVars = () => {
     '--color-background-lightblue': rgba(239, 245, 255, 1),
     '--color-background-paper': rgba(252, 252, 252, 1),
 
-    '--color-alternative-pardo': rgba(134, 109, 75, 1),
-    '--color-alternative-gold': rgba(173, 124, 89, 1),
-    '--color-alternative-darkorange': rgba(177, 92, 55, 1),
-    '--color-alternative-lightorange': rgba(226, 192, 112, 1),
-    '--color-alternative-prefermemberBlue': rgba(7, 34, 65, 1),
+    '--color-pardo': rgba(134, 109, 75, 1),
+    '--color-gold': rgba(173, 124, 89, 1),
+    '--color-darkorange': rgba(177, 92, 55, 1),
+    '--color-lightorange': rgba(226, 192, 112, 1),
+    '--color-prefermemberBlue': rgba(7, 34, 65, 1),
 
     '--color-warning': rgba(255, 200, 44, 1),
     '--color-error': rgba(213, 37, 37, 1),
