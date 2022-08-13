@@ -1,5 +1,6 @@
 const colors = require('./lib/colors')
 const columns = require('./lib/columns')
+const content = require('./lib/content')
 const screens = require('./lib/screens')
 const shadows = require('./lib/shadows')
 const spacing = require('./lib/spacing')
@@ -25,7 +26,7 @@ const getOverrides = () => {
 
 const getExtensions = () => {
   return {
-    content: ,
+    content: content.getOverrides(),
     opacity: ,
   }
 }
