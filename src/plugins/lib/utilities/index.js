@@ -1,5 +1,5 @@
 const square = require('./square')
 
-const getUtilities = () => [square]
+const getUtilities = () => [square()]
 
-module.export = getUtilities
+module.exports = getUtilities

@@ -14,4 +14,4 @@ const getUtility = () => plugin(function ({
   })
 })
 
-module.export = getUtility
+module.exports = getUtility
