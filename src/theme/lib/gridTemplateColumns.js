@@ -9,12 +9,10 @@ const getOverrides = () => BASE_GRID_TEMPLATE_COLUMNS
 
 const getExtensions = () => {
   return {
-    container: {
-      xs: '16px 1fr 16px',
-      sm: '1fr 560px 1fr',
-      md: '72px 1fr 72px',
-      lg: '1fr 1224px 1fr',
-    }
+    'container': '16px 1fr 16px',
+    'container-sm': '1fr 560px 1fr',
+    'container-md': '72px 1fr 72px',
+    'container-lg': '1fr 1224px 1fr',
   }
 }
 
