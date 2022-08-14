@@ -2,6 +2,7 @@ const colors = require('./lib/colors')
 const columns = require('./lib/columns')
 const content = require('./lib/content')
 const fontFamily = require('./lib/fontFamily')
+const fontSize = require('./lib/fontSize')
 const fontWeight = require('./lib/fontWeight')
 const gridColumn = require('./lib/gridColumn')
 const gridColumnEnd = require('./lib/gridColumnEnd')
@@ -19,7 +20,7 @@ const getOverrides = () => {
     columns: columns.getOverrides(),
     dropShadow: shadows.getOverrides(),
     fontFamily: fontFamily.getOverrides(),
-    fontSize: ,
+    fontSize: fontSize.getOverrides(),
     fontWeight: fontWeight.getOverrides(),
     gridColumn: gridColumn.getOverrides(),
     gridColumnEnd: gridColumnEnd.getOverrides(),
@@ -37,9 +38,13 @@ const getExtensions = () => {
   }
 }
 
-module.exports = {
-  ...getOverrides(),
-  extend: {
-    ...getExtensions()
+const getTheme = () => {
+  return {
+    ...getOverrides(),
+    extend: {
+      ...getExtensions()
+    }
   }
 }
+
+module.exports = getTheme

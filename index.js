@@ -6,15 +6,13 @@ const cleanObject = (plugins, theme) => {
   const result = {}
   if (plugins.length > 0) result.plugins = plugins
   if (Object.keys(theme).length > 0) result.theme = theme
-  return {
-
-  }
+  return result
 }
 
 module.exports = {
   corePlugins: {
     container: false
   },
-  prefix: constants.default.PREFIX,
-  ...cleanObject(plugins.getPlugins(), theme.getTheme())
+  prefix: constants.PREFIX,
+  ...cleanObject(plugins(), theme())
 }
