@@ -1,4 +1,4 @@
-const BASE_GRID_COLUMN_START = {
+const BASE_GRID_COLUMN_END = {
   'auto': 'auto;',
   '1': '1',
   '2': '2',
@@ -6,7 +6,7 @@ const BASE_GRID_COLUMN_START = {
   '4': '4'
 }
 
-const getOverrides = () => BASE_GRID_COLUMN_START
+const getOverrides = () => BASE_GRID_COLUMN_END
 
 const getExtensions = () => {
   return {}
