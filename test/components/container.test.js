@@ -1,4 +1,4 @@
-const container = require('./../../src/plugins/components/container')
+const container = require('./../../src/plugins/lib/components/container')
 
 
 test('Returns a string: string object', () => {

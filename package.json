@@ -1,6 +1,6 @@
 {
   "name": "cmds-tailwind-styles",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A tailwind preset of utilities for Copa Airlines design system",
   "main": "index.js",
   "directories": {

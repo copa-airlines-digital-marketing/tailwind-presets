@@ -1,4 +1,4 @@
-const components = require('./../../src/plugins/components/index')
+const components = require('./../../src/plugins/lib/components/index')
 
 
 test('Returns a string: string object', () => {
