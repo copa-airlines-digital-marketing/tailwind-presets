@@ -19,7 +19,7 @@ const BASE_COLORS = {
     gold: 'rgb(var(--color-gold) / <alpha-value>)',
     darkorange: 'rgb(var(--color-darkorange) / <alpha-value>)',
     lightorange: 'rgb(var(--color-lightorange) / <alpha-value>)',
-    prefermemberBlue: 'rgb(var(--color-prefermemberBlue) / <alpha-value>)',
+    prefermemberblue: 'rgb(var(--color-prefermemberBlue) / <alpha-value>)',
   },
   status: {
     warning: 'rgb(var(--color-warning) / <alpha-value>)',

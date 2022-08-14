@@ -12,21 +12,7 @@ const gcd = (a, b) => {
 const generateUnitSpacing = (unit, start, end, step) => {
   const result = {}
   for (let i = start; i <= end; i = i + step) {
-    const number = i.toString().split('.')[0]
-    const fraction = '0.' + (i.toString().split('.')[1] || '0')
-    const len = fraction.length - 2;
-
-    let denominator = Math.pow(10, len);
-    let numerator = parseFloat(fraction) * denominator;
-
-    const divisor = gcd(numerator, denominator);
-
-    numerator /= divisor;
-    denominator /= divisor;
-
-    const sufix = denominator != 1 ? `${number !== '0' ? number+'_': ''}${numerator}/${denominator}` : `${number}`
-
-    result[sufix] = `${i}${unit}`
+    result[i.toString().replace('.', '\.')] = `${i}${unit}`
   }
   return result
 }
