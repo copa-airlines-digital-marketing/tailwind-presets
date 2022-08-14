@@ -13,6 +13,5 @@ module.exports = {
   corePlugins: {
     container: false
   },
-  prefix: constants.PREFIX,
   ...cleanObject(plugins(), theme())
 }
