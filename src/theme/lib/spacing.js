@@ -12,7 +12,7 @@ const gcd = (a, b) => {
 const generateUnitSpacing = (unit, start, end, step) => {
   const result = {}
   for (let i = start; i <= end; i = i + step) {
-    result[i.toString().replace('.', '\.')] = `${i}${unit}`
+    result[i.toString().replace('.', '_')] = `${i}${unit}`
   }
   return result
 }
@@ -20,7 +20,7 @@ const generateUnitSpacing = (unit, start, end, step) => {
 const getOverrides = () => {
   return {
     ...BASE_SPACING,
-    ...generateUnitSpacing('rem', 0, 9.5, 0.5)
+    ...generateUnitSpacing('px', 0, 152, 8)
   }
 }
 
