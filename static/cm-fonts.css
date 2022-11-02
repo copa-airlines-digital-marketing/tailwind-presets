@@ -1,33 +1,45 @@
 @font-face {
   font-family: "Gilroy";
-  src: url("/fonts/Gilroy-Regular.eot");
+  src: url("https://www.copaair.com/promotions/fonts/Gilroy-Regular.eot");
   src: local("Gilroy Regular"), local("Gilroy-Regular"),
-    url("/fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/Gilroy-Regular.woff2") format("woff2"),
-    url("/fonts/Gilroy-Regular.woff") format("woff"),
-    url("/fonts/Gilroy-Regular.ttf") format("truetype");
+    url("https://www.copaair.com/promotions/fonts/Gilroy-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://www.copaair.com/promotions/fonts/Gilroy-Regular.woff2")
+      format("woff2"),
+    url("https://www.copaair.com/promotions/fonts/Gilroy-Regular.woff")
+      format("woff"),
+    url("https://www.copaair.com/promotions/fonts/Gilroy-Regular.ttf")
+      format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gilroy";
-  src: url("/fonts/Gilroy-Medium.eot");
-  src: url("/fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/Gilroy-Medium.woff2") format("woff2"),
-    url("/fonts/Gilroy-Medium.woff") format("woff"),
-    url("/fonts/Gilroy-Medium.ttf") format("truetype");
+  src: url("https://www.copaair.com/promotions/fonts/Gilroy-Medium.eot");
+  src: url("https://www.copaair.com/promotions/fonts/Gilroy-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://www.copaair.com/promotions/fonts/Gilroy-Medium.woff2")
+      format("woff2"),
+    url("https://www.copaair.com/promotions/fonts/Gilroy-Medium.woff")
+      format("woff"),
+    url("https://www.copaair.com/promotions/fonts/Gilroy-Medium.ttf")
+      format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gilroy";
-  src: url("/fonts/Gilroy-Bold.eot");
-  src: url("/fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/Gilroy-Bold.woff2") format("woff2"),
-    url("/fonts/Gilroy-Bold.woff") format("woff"),
-    url("/fonts/Gilroy-Bold.ttf") format("truetype");
+  src: url("https://www.copaair.com/promotions/fonts/Gilroy-Bold.eot");
+  src: url("https://www.copaair.com/promotions/fonts/Gilroy-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://www.copaair.com/promotions/fonts/Gilroy-Bold.woff2")
+      format("woff2"),
+    url("https://www.copaair.com/promotions/fonts/Gilroy-Bold.woff")
+      format("woff"),
+    url("https://www.copaair.com/promotions/fonts/Gilroy-Bold.ttf")
+      format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -35,24 +47,47 @@
 @font-face {
   font-family: "Suisse Int'l";
   font-weight: 300;
-  src: url(/fonts/SuisseIntl-Light.ttf) format("ttf");
+  src: url("https://www.copaair.com/promotions/fonts/SuisseIntl-Light.woff2")
+      format("woff2"),
+    url("https://www.copaair.com/promotions/fonts/SuisseIntl-Light.woff")
+      format("woff"),
+    url(https://www.copaair.com/promotions/fonts/SuisseIntl-Light.ttf)
+      format("ttf");
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Suisse Int'l";
   font-weight: 400;
-  src: url(/fonts/SuisseIntl-Regular.ttf) format("ttf");
+  src: url("https://www.copaair.com/promotions/fonts/GiSuisseIntllroy-Regular.woff2")
+      format("woff2"),
+    url("https://www.copaair.com/promotions/fonts/SuisseIntl-Regular.woff")
+      format("woff"),
+    url(https://www.copaair.com/promotions/fonts/SuisseIntl-Regular.ttf)
+      format("ttf");
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Suisse Int'l";
   font-weight: 500;
-  src: url(/fonts/SuisseIntl-Medium.ttf) format("ttf");
+  src: url("https://www.copaair.com/promotions/fonts/SuisseIntl-Medium.woff2")
+      format("woff2"),
+    url("https://www.copaair.com/promotions/fonts/SuisseIntl-Medium.woff")
+      format("woff"),
+    url(https://www.copaair.com/promotions/fonts/SuisseIntl-Medium.ttf)
+      format("ttf");
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Suisse Int'l";
   font-style: normal;
   font-weight: 600;
-  src: url(/fonts/SuisseIntl-SemiBold.ttf) format("ttf");
+  src: url("https://www.copaair.com/promotions/fonts/SuisseIntl-SemiBold.woff2")
+      format("woff2"),
+    url("https://www.copaair.com/promotions/fonts/SuisseIntl-SemiBold.woff")
+      format("woff"),
+    url(https://www.copaair.com/promotions/fonts/SuisseIntl-SemiBold.ttf)
+      format("ttf");
 }
