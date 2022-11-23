@@ -41,11 +41,11 @@ const BASE_BACKGROUNDS = {
 }
 
 const getOverrides = () => {
-  return BASE_BACKGROUNDS
+  return BASE_BACKGROUNDS;
 }
 
 const getExtensions = () => {
-  return {}
+  return {};
 }
 
 module.exports = {
