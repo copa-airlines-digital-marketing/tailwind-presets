@@ -12,7 +12,7 @@ const opacity = require('./lib/opacity')
 const screens = require('./lib/screens')
 const shadows = require('./lib/shadows')
 const spacing = require('./lib/spacing')
-const backgound = require('./lib/backgrounds')
+const background = require('./lib/backgrounds')
 
 const getOverrides = () => {
   return {
