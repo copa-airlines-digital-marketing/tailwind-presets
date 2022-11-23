@@ -12,6 +12,7 @@ const opacity = require('./lib/opacity')
 const screens = require('./lib/screens')
 const shadows = require('./lib/shadows')
 const spacing = require('./lib/spacing')
+const backgound = require('./lib/backgrounds')
 
 const getOverrides = () => {
   return {
@@ -28,6 +29,7 @@ const getOverrides = () => {
     gridTemplateColumns: gridTemplateColumns.getOverrides(),
     screens: screens.getOverrides(),
     spacing: spacing.getOverrides(),
+    background: background.getOverrides(),
   }
 }
 
