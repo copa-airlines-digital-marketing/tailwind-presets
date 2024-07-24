@@ -6,7 +6,8 @@ const BASE_SPACING = {
   roomy: "var(--spacing-roomy)",
   spacious: "var(--spacing-spacious)",
   big: "var(--spacing-big)",
-  huge: "var(--spacing-huge)"
+  huge: "var(--spacing-huge)",
+  'grid-gutter': "var(--grid-gutter)"
 }
 
 const getOverrides = () => {
