@@ -1,8 +1,11 @@
-const colorsVars = require('./colorVars')
-
 const getVars = () => {
   return {
-    ...colorsVars()
+    ...require('./colorVars')(),
+    ...require('./verticalSpacingVars'),
+    ...require('./otherSpacingVars'),
+    ...require('./lineHeight'),
+    ...require('./fontSize'),
+    ...require('./letter-spacing')
   }
 }
 

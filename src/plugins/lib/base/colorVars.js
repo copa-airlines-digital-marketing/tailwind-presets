@@ -1,39 +1,53 @@
-const rgba = (...args) => args.slice(0, 3).join(" ");
-
 const getVars = () => {
   return {
-    "--color-primary": rgba(0, 50, 160, 1),
-    "--color-primary-light": rgba(14, 104, 255, 1),
-    "--color-primary-dark": rgba(0, 40, 128, 1),
-    "--color-primary-ultralight": rgba(214, 227, 255, 1),
-    "--color-primary-ultradark": rgba(0, 26, 102, 1),
+    '--color-primary': '221 100% 31%',
+    '--color-primary-light': '218 100% 53%',
+    '--color-primary-dark': '221 100% 25%',
+    '--color-primary-ultralight': '221 100% 92%',
+    '--color-primary-ultradark': '225 100% 20%',
+    '--color-primary-faded': '218 100% 81%',
 
-    "--color-secondary": rgba(0, 163, 224, 1),
+    '--color-secondary': '196 100% 44%',
+    '--color-secondary-faded': '196 78% 72%',
 
-    "--color-background-lightblue": rgba(239, 245, 255, 1),
-    "--color-background-paper": rgba(252, 252, 252, 1),
+    '--color-tertiary': '26 34% 72%',
 
-    "--color-pardo": rgba(134, 109, 75, 1),
-    "--color-gold": rgba(173, 124, 89, 1),
-    "--color-darkorange": rgba(177, 92, 55, 1),
-    "--color-lightorange": rgba(226, 192, 112, 1),
-    "--color-prefermemberBlue": rgba(7, 34, 65, 1),
+    '--color-background-lightblue': '218 100% 97%',
+    '--color-background-paper': '0 0% 99%',
 
-    "--color-warning": rgba(255, 200, 44, 1),
-    "--color-error": rgba(213, 37, 37, 1),
-    "--color-success": rgba(12, 126, 62, 1),
+    '--color-alternative-pardo': '35 28% 41%',
+    '--color-alternative-gold': '25 34% 51%',
+    '--color-alternative-darkorange': '18 53% 45%',
+    '--color-alternative-lightorange': '42 66 66%',
+    '--color-alternative-prefermemberBlue': '212 81% 14%',
 
-    "--color-grey-800": rgba(18, 18, 18, 1),
-    "--color-grey-700": rgba(51, 51, 51, 1),
-    "--color-grey-600": rgba(102, 102, 102, 1),
-    "--color-grey-500": rgba(153, 153, 153, 1),
-    "--color-grey-400": rgba(170, 170, 171, 1),
-    "--color-grey-300": rgba(204, 204, 203, 1),
-    "--color-grey-200": rgba(219, 218, 216, 1),
-    "--color-grey-100": rgba(239, 239, 238, 1),
-    "--color-grey-75": rgba(249, 249, 248, 1),
-    "--color-grey-0": rgba(255, 255, 255, 1),
-  };
-};
+    '--color-system-warning': '44 100% 59%',
+    '--color-system-warning-faded': '44 100% 92%',
+    '--color-system-error': '360 70% 49%',
+    '--color-system-error-faded': '0 100% 97%',
+    '--color-system-success': '147 83% 27%',
+    '--color-system-success-faded': '146 31% 85%',
+
+    '--color-grey-800': '0 0% 7%',
+    '--color-grey-700': '0 0% 40%',
+    '--color-grey-600': '0 0% 40%',
+    '--color-grey-500': '0 0% 60%',
+    '--color-grey-400': '240 1% 67%',
+    '--color-grey-300': '40 4% 85%',
+    '--color-grey-200': '40 4% 85%',
+    '--color-grey-100': '60 3% 94%',
+    '--color-grey-75': '60 8% 97%',
+    '--color-grey-50': '60 8% 97%',
+
+    '--color-common-black': '0 0% 0%',
+    '--color-common-white': '0 0% 100%',
+
+    '--color-status-member': '221 100% 31%',
+    '--color-status-silver': '219 88% 20%',
+    '--color-status-gold': '36 32% 42%',
+    '--color-status-platinum': '0 0% 40%',
+    '--color-status-presidential': '0 0% 7%',
+  }
+}
 
 module.exports = getVars;

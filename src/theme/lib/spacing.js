@@ -1,31 +1,20 @@
 const BASE_SPACING = {
-  auto: 'auto',
-  'px': '1px',
-}
-
-const gcd = (a, b) => {
-  if (b < 0.0000001) return a;
-
-  return gcd(b, Math.floor(a % b));
-};
-
-const generateUnitSpacing = (unit, start, end, step) => {
-  const result = {}
-  for (let i = start; i <= end; i = i + step) {
-    result[i.toString().replace('.', '_')] = `${i}${unit}`
-  }
-  return result
+  minimal: "var(--spacing-minimal)",
+  tiny: "var(--spacing-tiny)",
+  petit: "var(--spacing-petit)",
+  normal: "var(--spacing-normal)",
+  roomy: "var(--spacing-roomy)",
+  spacious: "var(--spacing-spacious)",
+  big: "var(--spacing-big)",
+  huge: "var(--spacing-huge)"
 }
 
 const getOverrides = () => {
-  return {
-    ...BASE_SPACING,
-    ...generateUnitSpacing('px', 0, 152, 8)
-  }
+  return {}
 }
 
 const getExtensions = () => {
-  return {}
+  return BASE_SPACING
 }
 
 module.exports = {

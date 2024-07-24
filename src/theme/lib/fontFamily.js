@@ -1,14 +1,14 @@
 const BASE_FONT_FAMILY = {
-  heading: ["Gilroy", "Helvetica", "Arial", "sans-serif"],
-  sans: ['"Suisse Int\'l"', "Helvetica", "Arial", "sans-serif"],
+  gilroy: ["Gilroy", "Helvetica", "Arial", "sans-serif"],
+  suisse: ['"Suisse Int\'l"', "Helvetica", "Arial", "sans-serif"],
 };
 
 const getOverrides = () => {
-  return BASE_FONT_FAMILY;
+  return {};
 };
 
 const getExtensions = () => {
-  return {};
+  return BASE_FONT_FAMILY;
 };
 
 module.exports = {

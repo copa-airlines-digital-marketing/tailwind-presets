@@ -1,6 +1,3 @@
-const square = require('./square')
-
-const getUtilities = () => [square()]
-
+const getUtilities = () => []
 
 module.exports = getUtilities
