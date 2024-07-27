@@ -1,12 +1,14 @@
 module.exports = {
-  '--spacing-minimal': '8px',
-  '--spacing-tiny': '16px',
-  '--spacing-petit': '24px',
-  '--spacing-normal': '32px',
-  '--spacing-roomy':
-    'clamp(32px, (100vw - 599px) * 99, clamp(40px, (100vw - 959px) * 99, clamp(48px, (100vw - 1367px) * 99, 56px)))',
-  '--spacing-spacious':
-    'clamp(40px, (100vw - 599px) * 99, clamp(48px, (100vw - 959px) * 99, clamp(56px, (100vw - 1367px) * 99, 64px)))',
-  '--spacing-big': 'clamp(56px, (100vw - 599px) * 99, clamp(64px, (100vw - 959px) * 99, clamp(72px, (100vw - 1367px) * 99, 80px)))',
-  '--spacing-huge': 'clamp(72px, (100vw - 599px) * 99, clamp(88px, (100vw - 959px) * 99, clamp(96px, (100vw - 1367px) * 99, 112px)))',
-}
+  "--spacing-minimal": "0.5rem",
+  "--spacing-tiny": "1rem",
+  "--spacing-petit": "1.5rem",
+  "--spacing-normal": "2rem",
+  "--spacing-roomy":
+    "clamp(2rem, (100vw - 599px) * 99, clamp(2.5rem, (100vw - 959px) * 99, clamp(3rem, (100vw - 1367px) * 99, 3.5rem)))",
+  "--spacing-spacious":
+    "clamp(2.5rem, (100vw - 599px) * 99, clamp(3rem, (100vw - 959px) * 99, clamp(3.5rem, (100vw - 1367px) * 99, 4rem)))",
+  "--spacing-big":
+    "clamp(3.5rem, (100vw - 599px) * 99, clamp(4rem, (100vw - 959px) * 99, clamp(4.5rem, (100vw - 1367px) * 99, 5rem)))",
+  "--spacing-huge":
+    "clamp(4.5rem, (100vw - 599px) * 99, clamp(5.5rem, (100vw - 959px) * 99, clamp(6rem, (100vw - 1367px) * 99, 7rem)))",
+};
