@@ -15,25 +15,16 @@ const spacing = require('./lib/spacing')
 
 const getOverrides = () => {
   return {
+    screens: screens.getOverrides(),
   }
 }
 
 const getExtensions = () => {
   return {
     content: content.getExtensions(),
-    opacity: opacity.getExtensions(),
-    boxShadow: shadows.getExtensions(),
     colors: colors.getExtensions(),
-    columns: columns.getExtensions(),
-    dropShadow: shadows.getExtensions(),
     fontFamily: fontFamily.getExtensions(),
     fontSize: fontSize.getExtensions(),
-    fontWeight: fontWeight.getExtensions(),
-    gridColumn: gridColumn.getExtensions(),
-    gridColumnEnd: gridColumnEnd.getExtensions(),
-    gridColumnStart: gridColumnStart.getExtensions(),
-    gridTemplateColumns: gridTemplateColumns.getExtensions(),
-    screens: screens.getExtensions(),
     spacing: spacing.getExtensions(),
   }
 }
