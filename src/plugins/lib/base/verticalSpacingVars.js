@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = () => ({
   "--spacing-minimal": "0.5rem",
   "--spacing-tiny": "1rem",
   "--spacing-petit": "1.5rem",
@@ -11,4 +11,4 @@ module.exports = {
     "clamp(3.5rem, (100vw - 599px) * 99, clamp(4rem, (100vw - 959px) * 99, clamp(4.5rem, (100vw - 1367px) * 99, 5rem)))",
   "--spacing-huge":
     "clamp(4.5rem, (100vw - 599px) * 99, clamp(5.5rem, (100vw - 959px) * 99, clamp(6rem, (100vw - 1367px) * 99, 7rem)))",
-};
+})

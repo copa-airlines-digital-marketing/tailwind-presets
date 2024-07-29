@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = () => ({
   "--letter-spacing-u6":
     "clamp(-0.08875rem, (100vw - 599px) * 99, clamp(-0.138125rem, (100vw - 959px) * 99, clamp(-0.163125rem, (100vw - 1367px) * 99, -0.1875rem)))",
   "--letter-spacing-u5":
@@ -14,4 +14,4 @@ module.exports = {
   "--letter-spacing-d1": "0rem",
   "--letter-spacing-d2": "0.0625rem",
   "--letter-spacing-d3": "0rem",
-};
+})
