@@ -15,19 +15,6 @@ const spacing = require('./lib/spacing')
 
 const getOverrides = () => {
   return {
-    boxShadow: shadows.getOverrides(),
-    colors: colors.getOverrides(),
-    columns: columns.getOverrides(),
-    dropShadow: shadows.getOverrides(),
-    fontFamily: fontFamily.getOverrides(),
-    fontSize: fontSize.getOverrides(),
-    fontWeight: fontWeight.getOverrides(),
-    gridColumn: gridColumn.getOverrides(),
-    gridColumnEnd: gridColumnEnd.getOverrides(),
-    gridColumnStart: gridColumnStart.getOverrides(),
-    gridTemplateColumns: gridTemplateColumns.getOverrides(),
-    screens: screens.getOverrides(),
-    spacing: spacing.getOverrides(),
   }
 }
 
@@ -35,6 +22,19 @@ const getExtensions = () => {
   return {
     content: content.getExtensions(),
     opacity: opacity.getExtensions(),
+    boxShadow: shadows.getExtensions(),
+    colors: colors.getExtensions(),
+    columns: columns.getExtensions(),
+    dropShadow: shadows.getExtensions(),
+    fontFamily: fontFamily.getExtensions(),
+    fontSize: fontSize.getExtensions(),
+    fontWeight: fontWeight.getExtensions(),
+    gridColumn: gridColumn.getExtensions(),
+    gridColumnEnd: gridColumnEnd.getExtensions(),
+    gridColumnStart: gridColumnStart.getExtensions(),
+    gridTemplateColumns: gridTemplateColumns.getExtensions(),
+    screens: screens.getExtensions(),
+    spacing: spacing.getExtensions(),
   }
 }
 
