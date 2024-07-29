@@ -8,7 +8,7 @@ module.exports = () => ({
   "--letter-spacing-u3":
     "clamp(-0.046875rem, (100vw - 599px) * 99, clamp(-0.05875rem, (100vw - 959px) * 99, clamp(-0.09375rem, (100vw - 1367px) * 99, -0.078125rem)))",
   "--letter-spacing-u2":
-    "clamp(-0.63rem, (100vw - 599px) * 99, clamp(-0.046875rem, (100vw - 959px) * 99, clamp(-0.055rem, (100vw - 1367px) * 99, -0.0625rem)))",
+    "clamp(-0.063rem, (100vw - 599px) * 99, clamp(-0.046875rem, (100vw - 959px) * 99, clamp(-0.055rem, (100vw - 1367px) * 99, -0.0625rem)))",
   "--letter-spacing-u1": "0rem",
   "--letter-spacing-b": "0rem",
   "--letter-spacing-d1": "0rem",
