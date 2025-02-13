@@ -1,7 +1,7 @@
-const preset = require('./../index')
+const plugins = require('../../src/plugins/index')
 
 
 test('Returns a string: string object', () => {
-  console.log(preset)
+  console.log(plugins())
   expect(true).toBe(true);
 });

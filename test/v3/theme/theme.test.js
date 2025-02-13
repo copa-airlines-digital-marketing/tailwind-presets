@@ -1,7 +1,7 @@
-const plugins = require('./../src/plugins/index')
+const theme = require('../../../src/theme/index')
 
 
 test('Returns a string: string object', () => {
-  console.log(plugins())
+  console.log(theme())
   expect(true).toBe(true);
 });

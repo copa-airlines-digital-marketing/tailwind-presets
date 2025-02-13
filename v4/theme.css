@@ -1,0 +1,224 @@
+@theme {
+  --color-primary: oklch(37.44% 0.1808 262.54);
+  --color-primary-light: oklch(56.71% 0.2383 261.33);
+  --color-primary-dark: oklch(32.34% 0.1525 262.25);
+  --color-primary-ultralight: oklch(91.51% 0.0406 265.75);
+  --color-primary-ultradark: oklch(26.59% 0.1364 263.17);
+  --color-primary-faded: oklch(80.96% 0.0955 261.13);
+
+  --color-secondary: oklch(67.84% 0.1411 233.53);
+  --color-secondary-faded: oklch(82.09% 0.09 223.37);
+
+  --color-tertiary: oklch(78.93% 0.0431 59.51);
+
+  --color-background-lightblue: oklch(96.96% 0.0143 261.5);
+  --color-background-paper: oklch(99.24% 0 0);
+
+  --color-alternative-pardo: oklch(55.13% 0.0578 75.43);
+  --color-alternative-gold: oklch(62.43% 0.07935 56.2385);
+  --color-alternative-darkorange: oklch(56.4% 0.1219 42.91);
+  --color-alternative-lightorange: oklch(81.82% 0.1069 86.84);
+  --color-alternative-prefermemberBlue: oklch(25.02% 0.0669 254.22);
+
+  --color-system-warning: oklch(85.72% 0.164854 86.5522);
+  --color-system-warning-faded: oklch(96.83% 0.0407 90.37);
+  --color-system-error: oklch(56.29% 0.2088 27.23);
+  --color-system-error-faded: oklch(96.63% 0.0166 17.44);
+  --color-system-success: oklch(52.07% 0.1342 151.68);
+  --color-system-success-faded: oklch(89.94% 0.031 160.95);
+
+  --color-grey-800: oklch(18.22% 0 0);
+  --color-grey-700: oklch(32.11% 0 0);
+  --color-grey-600: oklch(51.03% 0 0);
+  --color-grey-500: oklch(68.3% 0 0);
+  --color-grey-400: oklch(73.86% 0.0024 286.34);
+  --color-grey-300: oklch(84.65% 0.0014 106.43);
+  --color-grey-200: oklch(88.63% 0.003 84.56);
+  --color-grey-100: oklch(95.54% 0.0012 106.42);
+  --color-grey-75: oklch(95.54% 0.0012 106.42);
+  --color-grey-50: oklch(97.87% 0.0016 106.43);
+
+  --color-common-black: oklch(0% 0 0);
+  --color-common-white: oklch(100% 0 0);
+
+  --color-status-member: oklch(37.44% 0.1808 262.54);
+  --color-status-silver: oklch(28.69% 0.1102 261.34);
+  --color-status-gold: oklch(56.86% 0.0669 76.9);
+  --color-status-platinum: oklch(51.03% 0 0);
+  --color-status-presidential: oklch(18.15% 0 0);
+
+  --text-u6: var(--responsive-font-size-u6);
+  --text-u5: var(--responsive-font-size-u5);
+  --text-u4: var(--responsive-font-size-u4);
+  --text-u3: var(--responsive-font-size-u3);
+  --text-u2: var(--responsive-font-size-u2);
+  --text-u1: var(--responsive-font-size-u1);
+  --text-b: 1rem;
+  --text-d1: 0.875rem;
+  --text-d2: 0.75rem;
+  --text-d3: 0.75rem;
+
+  --text-u6-letter--spacing: var(--responsive-letter-spacing-u6);
+  --text-u5-letter--spacing: var(--responsive-letter-spacing-u5);
+  --text-u4-letter--spacing: var(--responsive-letter-spacing-u4);
+  --text-u3-letter--spacing: var(--responsive-letter-spacing-u3);
+  --text-u2-letter--spacing: var(--responsive-letter-spacing-u2);
+  --text-u1-letter--spacing: 0rem;
+  --text-b-letter--spacing: 0rem;
+  --text-d1-letter--spacing: 0rem;
+  --text-d2-letter--spacing: 0.0625rem;
+  --text-d3-letter--spacing: 0rem;
+
+  --text-u6-line--height: var(--responsive-line-height-u6);
+  --text-u5-line--height: var(--responsive-line-height-u5);
+  --text-u4-line--height: var(--responsive-line-height-u4);
+  --text-u3-line--height: var(--responsive-line-height-u3);
+  --text-u2-line--height: var(--responsive-line-height-u2);
+  --text-u1-line--height: var(--responsive-line-height-u1);
+  --text-b-line--height: 1.5rem;
+  --text-d1-line--height: 1.25rem;
+  --text-d2-line--height: 1rem;
+  --text-d3-line--height: 1rem;
+
+  --spacing-gutter: var(--responsive-grid-gutter);
+  --spacing-minimal: 8px;
+  --spacing-tiny: 16px;
+  --spacing-petit: 24px;
+  --spacing-normal: 32px;
+  --spacing-roomy: var(--responsive-vertical-spacing-roomy);
+  --spacing-spacious:var(--responsive-vertical-spacing-spacious);
+  --spacing-big: var(--responsive-vertical-spacing-big);
+  --spacing-huge: var(--responsive-vertical-spacing-huge);
+
+  --breakpoint-*: initial;
+  --breakpoint-sm: 600px;  
+  --breakpoint-md: 960px;  
+  --breakpoint-lg: 1367px;
+
+  --font-gilroy: "Gilroy", Helvetica, Arial, sans-serif;
+  --font-suisse: "Suisse Int\'l", Helvetica, Arial, sans-serif;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+  max-width: var(--container-width);
+}
+
+@utility container-grid {
+  display: grid;
+  grid-template-columns: var(--container-grid-columns);
+}
+
+@layer base {
+  :root{
+    --container-width: 100%;
+    --container-padding: 16px;
+    --container-grid-columns: 16px 1fr 16px;
+    --responsive-grid-gutter: 16px;
+    --responsive-vertical-spacing-roomy: 32px;
+    --responsive-vertical-spacing-spacious: 40px;
+    --responsive-vertical-spacing-big: 56px;
+    --responsive-vertical-spacing-huge: 72px;
+    --responsive-font-size-u6: 2.25rem;
+    --responsive-font-size-u5: 2rem;
+    --responsive-font-size-u4: 1.875rem;
+    --responsive-font-size-u3: 1.5rem;
+    --responsive-font-size-u2: 1.125rem;
+    --responsive-font-size-u1: 1.125rem;
+    --responsive-letter-spacing-u6: -0.08875rem;
+    --responsive-letter-spacing-u5: -0.083125rem;
+    --responsive-letter-spacing-u4: -0.078125rem;
+    --responsive-letter-spacing-u3: -0.046875rem;
+    --responsive-letter-spacing-u2: -0.063rem;
+    --responsive-line-height-u6: 2.5rem;
+    --responsive-line-height-u5: 2.5rem;
+    --responsive-line-height-u4: 2rem;
+    --responsive-line-height-u3: 2rem;
+    --responsive-line-height-u2: 1.5rem;
+    --responsive-line-height-u1: 1.5rem;
+  }
+
+  @media (width >= 600px) {
+    :root{
+      --container-width: 560px;
+      --container-padding: 0;
+      --container-grid-columns: 1fr 560px 1fr;
+      --responsive-vertical-spacing-roomy: 40px;
+      --responsive-vertical-spacing-spacious: 48px;
+      --responsive-vertical-spacing-big: 64px;
+      --responsive-vertical-spacing-huge: 88px;
+      --responsive-font-size-u6: 3.5rem;
+      --responsive-font-size-u5: 2.75rem;
+      --responsive-font-size-u4: 2.25rem;
+      --responsive-font-size-u3: 1.875rem;
+      --responsive-font-size-u2: 1.5rem;
+      --responsive-letter-spacing-u6: -0.138125rem;
+      --responsive-letter-spacing-u5: -0.114375rem;
+      --responsive-letter-spacing-u4: -0.09375rem;
+      --responsive-letter-spacing-u3: -0.05875rem;
+      --responsive-letter-spacing-u2: -0.046875rem;
+      --responsive-line-height-u6: 4rem;
+      --responsive-line-height-u5: 3rem;
+      --responsive-line-height-u4: 2.5rem;
+      --responsive-line-height-u3: 2.5rem;
+      --responsive-line-height-u2: 2rem;
+    }
+  }
+
+  @media (width >= 960px) {
+    :root{
+      --container-width: 100%;
+      --container-padding: 72px;
+      --container-grid-columns: 72px 1fr 72px;
+      --responsive-grid-gutter: 24px;
+      --responsive-vertical-spacing-roomy: 48px;
+      --responsive-vertical-spacing-spacious: 56px;
+      --responsive-vertical-spacing-big: 72px;
+      --responsive-vertical-spacing-huge: 96px;
+      --responsive-font-size-u6: 4.125rem;
+      --responsive-font-size-u5: 3.25rem;
+      --responsive-font-size-u4: 2.5rem;
+      --responsive-font-size-u3: 2.25rem;
+      --responsive-font-size-u2: 1.75rem;
+      --responsive-letter-spacing-u6: -0.163125rem;
+      --responsive-letter-spacing-u5: -0.135625rem;
+      --responsive-letter-spacing-u4: -0.078125rem;
+      --responsive-letter-spacing-u3: -0.09375rem;
+      --responsive-letter-spacing-u2: -0.055rem;
+      --responsive-line-height-u6: 4.5rem;
+      --responsive-line-height-u5: 3.5rem;
+      --responsive-line-height-u4: 3rem;
+    }
+  }
+
+  @media (width >= 1367px) {
+    :root{
+      --container-width: 1224px;
+      --container-padding: 0;
+      --container-grid-columns: 1fr 1224px 1fr;
+      --responsive-vertical-spacing-roomy: 56px;
+      --responsive-vertical-spacing-spacious: 64px;
+      --responsive-vertical-spacing-big: 80px;
+      --responsive-vertical-spacing-huge: 112px;
+      --responsive-font-size-u6: 4.75rem;
+      --responsive-font-size-u5: 3.75rem;
+      --responsive-font-size-u4: 3rem;
+      --responsive-font-size-u3: 2.5rem;
+      --responsive-font-size-u2: 2rem;
+      --responsive-font-size-u1: 1.25rem;
+      --responsive-letter-spacing-u6: -0.1875rem;
+      --responsive-letter-spacing-u5: -0.15625rem;
+      --responsive-letter-spacing-u4: -0.09375rem;
+      --responsive-letter-spacing-u3: -0.078125rem;
+      --responsive-letter-spacing-u2: -0.0652rem;
+      --responsive-line-height-u6: 5rem;
+      --responsive-line-height-u5: 4rem;
+      --responsive-line-height-u4: 4rem;
+      --responsive-line-height-u3: 3rem;
+      --responsive-line-height-u2: 2.5rem;
+      --responsive-line-height-u1: 2rem;
+    }
+  }
+
+}

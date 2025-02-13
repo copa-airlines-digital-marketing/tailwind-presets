@@ -1,7 +1,7 @@
-const base = require('./../src/plugins/lib/base/index')
+const preset = require('../../index')
 
 
 test('Returns a string: string object', () => {
-  console.log(base())
+  console.log(preset)
   expect(true).toBe(true);
 });

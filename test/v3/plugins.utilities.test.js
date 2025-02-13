@@ -1,4 +1,4 @@
-const utilities = require('./../src/plugins/lib/utilities/index')
+const utilities = require('../../src/plugins/lib/utilities/index')
 
 
 test('Returns a string: string object', () => {

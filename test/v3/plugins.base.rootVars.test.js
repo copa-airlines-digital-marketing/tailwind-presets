@@ -1,4 +1,4 @@
-const rootVars = require('./../src/plugins/lib/base/rootVars')
+const rootVars = require('../../src/plugins/lib/base/rootVars')
 
 
 test('Returns a string: string object', () => {

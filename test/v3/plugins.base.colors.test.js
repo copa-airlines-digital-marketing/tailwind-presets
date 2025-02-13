@@ -1,4 +1,4 @@
-const colorVars = require('./../src/plugins/lib/base/colorVars')
+const colorVars = require('../../src/plugins/lib/base/colorVars')
 
 
 test('Returns a string: string object', () => {
