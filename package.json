@@ -1,8 +1,8 @@
 {
   "name": "cmds-tailwind-styles",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "A tailwind preset of utilities for Copa Airlines design system",
-  "main": "index.js",
+  "main": "dist/cmds-tailwind-styles.js",
   "directories": {
     "lib": "lib"
   },
