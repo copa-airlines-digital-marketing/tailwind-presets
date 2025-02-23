@@ -86,16 +86,16 @@
   --spacing-petit: 24px;
   --spacing-normal: 32px;
   --spacing-roomy: var(--responsive-vertical-spacing-roomy);
-  --spacing-spacious:var(--responsive-vertical-spacing-spacious);
+  --spacing-spacious: var(--responsive-vertical-spacing-spacious);
   --spacing-big: var(--responsive-vertical-spacing-big);
   --spacing-huge: var(--responsive-vertical-spacing-huge);
 
   --breakpoint-*: initial;
-  --breakpoint-sm: 600px;  
-  --breakpoint-md: 960px;  
+  --breakpoint-sm: 600px;
+  --breakpoint-md: 960px;
   --breakpoint-lg: 1367px;
 
-  --font-gilroy: "Gilroy", Helvetica, Arial, sans-serif;
+  --font-gilroy: 'Gilroy', Helvetica, Arial, sans-serif;
   --font-suisse: "Suisse Int\'l", Helvetica, Arial, sans-serif;
 }
 
@@ -111,7 +111,7 @@
 }
 
 @layer base {
-  :root{
+  :root {
     --container-width: 100%;
     --container-padding: 16px;
     --container-grid-columns: 16px 1fr 16px;
@@ -140,7 +140,7 @@
   }
 
   @media (width >= 600px) {
-    :root{
+    :root {
       --container-width: 560px;
       --container-padding: 0;
       --container-grid-columns: 1fr 560px 1fr;
@@ -167,7 +167,7 @@
   }
 
   @media (width >= 960px) {
-    :root{
+    :root {
       --container-width: 100%;
       --container-padding: 72px;
       --container-grid-columns: 72px 1fr 72px;
@@ -193,7 +193,7 @@
   }
 
   @media (width >= 1367px) {
-    :root{
+    :root {
       --container-width: 1224px;
       --container-padding: 0;
       --container-grid-columns: 1fr 1224px 1fr;
@@ -220,5 +220,4 @@
       --responsive-line-height-u1: 2rem;
     }
   }
-
 }
