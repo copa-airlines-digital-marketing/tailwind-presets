@@ -97,8 +97,8 @@
 
   --font-gilroy: 'Gilroy', Helvetica, Arial, sans-serif;
   --font-suisse: "Suisse Int\'l", Helvetica, Arial, sans-serif;
-  --font-heading: --font-gilroy;
-  --font-body: --font-suisse;
+  --font-heading: var(--font-gilroy);
+  --font-body: var(--font-suisse);
 }
 
 @utility container {
