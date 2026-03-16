@@ -57,6 +57,12 @@
   --text-d1: 0.875rem;
   --text-d2: 0.75rem;
   --text-d3: 0.75rem;
+  --text-caption-tiny: 0.6875rem;
+  --text-caption-small: 0.75rem;
+  --text-caption: 0.875rem;
+  --text-overline: 0.75rem;
+
+  --spacing-grid-gutter: var(--responsive-grid-gutter);
 
   --text-u6-letter--spacing: var(--responsive-letter-spacing-u6);
   --text-u5-letter--spacing: var(--responsive-letter-spacing-u5);
