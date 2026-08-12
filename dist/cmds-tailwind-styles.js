@@ -126,7 +126,7 @@ var e = {
 	extend: { ...m() }
 });
 //#endregion
-//#region node_modules/.pnpm/tailwindcss@4.3.0/node_modules/tailwindcss/dist/plugin.mjs
+//#region node_modules/.pnpm/tailwindcss@4.3.3/node_modules/tailwindcss/dist/plugin.mjs
 function g(e, t) {
 	return {
 		handler: e,
